@@ -1,0 +1,26 @@
+.btnSaveResume {
+    align-self: flex-end;
+    height: 50px;
+    width: 160px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--white);
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.btnSaveResume:hover {
+    background: var(--blue-hover);
+}
+
+.btnSaveResume:disabled {
+    background: var(--primary-light-grey);
+    cursor: default;
+}
+
+.btnSaveResume:disabled:hover {
+    background: var(--primary-light-grey);
+}
+

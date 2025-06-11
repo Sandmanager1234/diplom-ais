@@ -1,0 +1,95 @@
+.formStyle {
+    width: 100%;
+}
+
+.wrapContacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    width: 640px;
+}
+
+.inputWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100% ;
+}
+
+.subTitle {
+    font: 400 14px/18px Roboto;
+    color: var(--primary-dark-grey);
+}
+
+.phoneInput {
+    height: 50px;
+    width: 100%;
+    padding-left: 16px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    outline: none;
+    font: 500 16px/20px Roboto;
+    color: var(--black);
+}
+
+.phoneInput:invalid[focused='true'] {
+    border: 1px solid var(--red-error);
+}
+
+.error{
+    display: none;
+}
+
+.phoneInput:invalid[focused='true'] ~ .error{
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+.title {
+    font: 500 24px/28px Roboto;
+}
+
+.borderContact{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+    padding: 15px   ;
+    border-radius: 12px;
+    border: 1px solid var(--primary-light-grey);
+}
+
+.wrapBtn {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.btnContinue {
+    height: 50px;
+    width: 160px;
+    margin-top: 14px;
+    font: 400 16px/20px RobotoRegular;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnContinue:hover {
+    border: 1px solid var(--blue);
+}
+
+.btnBack{
+    height: fit-content;
+    width: fit-content;
+    margin: auto 40px auto 40px;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--blue);
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

@@ -1,0 +1,45 @@
+.fieldInfo {
+  padding: 20px 0;
+  border-bottom: 1px solid #dee3ef;
+}
+
+.fieldInfo:last-child {
+  border: none;
+}
+
+.titleInfo {
+  color: var(--primary-dark-grey);
+  font: 400 14px/19px 'RobotoRegular', sans-serif;
+  margin-bottom: 16px;
+}
+
+.infoEducations {
+  font: 400 16px/140% 'RobotoRegular', sans-serif;
+}
+
+.endYear {
+  color: var(--black);
+  font: 400 14px/16px 'RobotoRegular', sans-serif;
+}
+
+.universityName {
+  margin-top: 8px;
+  font: 500 16px/19px 'RobotoMedium', sans-serif;
+}
+
+.organization {
+  color: var(--secondary-dark-grey);
+  font: 400 14px/19px 'RobotoRegular', sans-serif;
+}
+
+.specialization {
+  margin-top: 12px;
+  font: 400 14px/19px 'RobotoRegular', sans-serif;
+  color: var(--black);
+}
+
+.faculty {
+  margin-top: 8px;
+  color: var(--secondary-dark-grey);
+  font: 400 16px/19px 'RobotoRegular', sans-serif;
+}

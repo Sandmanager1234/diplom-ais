@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
+
+:root {
+  --white: #FFFFFF;
+  --black: #231F20;
+  --primary-dark-blue: #1D1F31;
+  --secondary-dark-blue: #05205E;
+  --secondary-dark-blue-hover: #042779;
+  --blue: #2969FF;
+  --blue-hover: #0246E7;
+  --blue-background:#DCE5FF;
+  --blue-background-hover:#BBCEFF;
+  --light-blue-hover:#F0F4FF;
+  --dark-blue-hover:#C2D1F7;
+  --dark-blue-hover2: #A1B9F4;
+  --red:#E21137;
+  --red-error: #FF2936;
+  --orange:#FF9029;
+  --green:#48C95F;
+  --grey:#9F9F9F;
+  --primary-dark-grey: #656263;
+  --secondary-dark-grey: #989898;
+  --primary-light-grey: #E1E1E1;
+  --secondary-light-grey: #EFF0F5;;
+  --secondary-light-grey-hover: #DEE3EF;
+  --font-family: Roboto, sans-serif;
+  --primary-box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 2px 24px rgba(0, 0, 0, 0.08);
+  --light-gray-border: #F5F5F5;
+  --grey-text: #959595;
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li {
+  margin: 0;
+}
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1 {
+  color: var(--black);
+  font: 500 32px/38px RobotoMedium;
+}
+
+[data-scroll-lock]::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+[data-scroll-lock]::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('./assets/fonts/Roboto-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'RobotoMedium';
+  src: url('./assets/fonts/Roboto-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Medium.ttf');
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Bold.ttf');
+  font-weight: 700;
+}

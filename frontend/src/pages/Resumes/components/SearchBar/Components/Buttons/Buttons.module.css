@@ -1,0 +1,84 @@
+.buttonsLarge,
+.buttonsSmall {
+    display: flex;
+}
+
+.buttonsLarge,
+.buttonsSmall {
+    align-items: center;
+    gap: 24px;
+}
+
+.buttonsLarge a {
+    border-radius: 5px;
+    transition: width .5s;
+}
+
+.buttonsSmall a {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.primary, .secondary, .roundPrimary, .roundSecondary {
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.primary, .secondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    gap: 5px;
+    width: 187px;
+    transition: width .5s;
+}
+
+.primary, .roundPrimary {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.roundPrimary, .roundSecondary {
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+    transition: width .5s;
+}
+
+.primary:hover, .roundPrimary:hover {
+    background-color: var(--blue-hover);
+    transition: background-color .5s;
+}
+
+.secondary {
+    width: 50px;
+}
+
+.primary path {
+    fill: var(--white);
+}
+.secondary:hover {
+    border: none;
+    color: var(--blue);
+    transition: color .5s;
+}
+
+.titleNavLink {
+    opacity: 1;
+    transition: opacity 2.5s;
+    text-decoration: none;
+}
+
+.titleNavLinkHidden {
+    position: absolute;
+    opacity: 0;
+}
+
+.link {
+    text-decoration: none;
+}

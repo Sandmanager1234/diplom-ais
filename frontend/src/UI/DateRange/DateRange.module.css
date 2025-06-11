@@ -1,0 +1,37 @@
+.dateRange {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font: 16px/22px RobotoRegular, sans-serif;
+    color: var(--primary-dark-grey);
+}
+
+.inputFields input {
+    width: 291px;
+    height: 50px;
+    padding: 0 16px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    color: var(--black);
+}
+
+.inputFields input::placeholder{
+    color: var(--primary-light-grey);
+}
+
+.inputFields input:focus {
+    outline: none;
+    border: 1px solid var(--blue);
+}
+
+.inputFields {
+    display: flex;
+    gap: 16px;
+}
+
+.error {
+    align-self: center;
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}

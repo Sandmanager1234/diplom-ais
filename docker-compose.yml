@@ -1,0 +1,37 @@
+services:
+  backend:
+    container_name: dev-backend
+    build:
+      context: ./ars
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./ars:/ars
+    env_file: ".env.be"
+    command: >
+      sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      - database
+
+  database:
+    image: postgres:17.4-alpine
+    env_file: ".env.db"
+    ports:
+      - "5432:5432"
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: dev-frontend
+    stdin_open: true
+    tty: true
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+
+
+

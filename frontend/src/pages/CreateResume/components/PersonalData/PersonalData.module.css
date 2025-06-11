@@ -1,0 +1,128 @@
+.formStyle {
+    width: 100%;
+}
+
+.wrapContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+    width: 640px;
+}
+
+.title {
+    font: 500 24px/28px RobotoMedium;
+    color: var(--black);
+}
+
+.inputMedium {
+    display: flex;
+    flex-direction: column;
+    width: 48.4375%;
+}
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+}
+
+.titleInput {
+    margin-bottom: 5px;
+    font: 400 14px/18px RobotoRegular;
+    color: var(--primary-dark-grey);
+}
+
+.inputStyle {
+    height: 50px;
+    padding-left: 15px;
+    font: 500 16px/20px RobotoMedium;
+    color: var(--black);
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 6px;
+    outline: none;
+    cursor: pointer;
+}
+
+.error {
+    display: none;
+}
+
+.inputStyle:invalid[focused='true'] ~ .error {
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+.inputStyle:invalid {
+    border: 1px solid var(--red-error);
+}
+
+.dib {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.inputStyle:focus {
+    border: 1px solid var(--blue);
+}
+
+.inputStyle:disabled {
+    background: transparent;
+    cursor: default;
+}
+
+.inputCheckbox {
+    display: none;
+}
+
+.checkboxContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    font: 400 16px/19px Roboto;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.checkboxContainer:hover .checkboxIndicator {
+    outline: 1px solid var(--blue);
+}
+
+.checkboxIndicator {
+    height: 15px;
+    width: 15px;
+    outline: 1px solid var(--primary-light-grey);
+    border-radius: 2px;
+}
+
+.checkboxContainer input:checked + .checkboxIndicator {
+    outline: 1px solid var(--blue);
+    background-image: url("/src/assets/images/checkmark.svg");
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-color: var(--blue);
+    background-position: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.btnContinue {
+    height: 50px;
+    width: 160px;
+    margin-top: 14px;
+    font: 400 16px/20px RobotoRegular;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnContinue:hover {
+    border: 1px solid var(--blue);
+}

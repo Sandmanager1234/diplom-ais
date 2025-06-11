@@ -1,0 +1,61 @@
+.day,
+.dayInOtherMonth,
+.activeDay {
+  padding: 8px;
+  min-height: 148px;
+  border: 1px solid var(--primary-light-grey);
+  border-top: none;
+  border-left: none;
+}
+
+.day {
+  cursor: pointer;
+}
+
+.dayInOtherMonth {
+  pointer-events: none;
+}
+
+.day:hover {
+  background-color: var(--dark-blue-hover);
+}
+
+.activeDay {
+  background-color: var(--dark-blue-hover);
+}
+
+.day:hover .dayNumberInCurrentMonth,
+.day:hover .currentDay,
+.activeDay .dayNumberInCurrentMonth,
+.activeDay .currentDay {
+  background-color: var(--dark-blue-hover2);
+}
+
+.dayNumberInCurrentMonth,
+.dayNumber,
+.currentDay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background-color: #eff0f5;
+  color: #d6d6d6;
+  border-radius: 50%;
+  padding: 6px;
+  width: 28px;
+  text-align: center;
+  height: 28px;
+  font-size: 16px;
+  line-height: 22.4px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.dayNumberInCurrentMonth {
+  color: #231f20;
+}
+
+.currentDay {
+  color: #ffffff;
+  background-color: #2969ff;
+}

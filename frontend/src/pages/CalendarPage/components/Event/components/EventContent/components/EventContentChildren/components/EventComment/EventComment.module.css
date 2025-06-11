@@ -1,0 +1,25 @@
+.title {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 19.6px;
+  color: var(--secondary-dark-grey);
+}
+
+.infoComment {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.textComment {
+  overflow: hidden;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: var(--black);
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}

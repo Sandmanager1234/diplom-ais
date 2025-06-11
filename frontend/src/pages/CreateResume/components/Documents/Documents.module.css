@@ -1,0 +1,149 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font: 500 24px/28px RobotoMedium;
+    color: var(--black);
+}
+
+.subTitle {
+    margin-top: 8px;
+    font: 400 16px/22px RobotoRegular;
+    color: var(--black);
+}
+
+.containerDragAndDrop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+    width: 494px;
+    margin-top: 16px;
+    border: 1px dashed var(--blue);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.documentPlus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+    height: 30px;
+    width: 30px;
+    background: var(--secondary-light-grey);
+    border-radius: 5px;
+}
+
+.documentTitle {
+    font: 500 14px/20px RobotoMedium;
+    color: var(--black);
+}
+
+.documentSubtitle {
+    font: 400 12px/17px RobotoMedium;
+    color: var(--primary-dark-grey);
+}
+
+.inputFile {
+    opacity: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.wrapBtn {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 640px;
+    margin-top: 20px;
+}
+
+
+.btnBack {
+    height: fit-content;
+    width: fit-content;
+    margin: auto 0 auto 40px;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--blue);
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnSaveResume {
+    height: 50px;
+    width: 160px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--white);
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.btnSaveResume:hover {
+    background: var(--blue-hover);
+}
+
+.btnSaveResume:disabled {
+    background: var(--primary-light-grey);
+}
+
+.btnSaveResume:disabled:hover {
+    background: var(--primary-light-grey);
+}
+
+.wrapDocuments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    margin-top: 50px;
+}
+
+.itemDocument {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 494px;
+    padding: 13px 16px 13px 10px;
+    border-radius: 6px;
+    font: 400 14px/20px Roboto;
+    color: var(--black);
+    background: var(--secondary-light-grey);
+    cursor: default;
+}
+
+.itemDocument div {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.itemDocument svg {
+    z-index: 0;
+    position: absolute;
+    right: 16px;
+}
+
+.deleteDoc {
+    z-index: 1;
+    position: relative;
+    height: 24px;
+    width: 24px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}

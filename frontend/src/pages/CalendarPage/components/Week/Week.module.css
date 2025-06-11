@@ -1,0 +1,92 @@
+.dayWrapper {
+    flex: 1 1 auto;
+    min-width: 148px;
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    position: relative;
+    border-top: 1px solid var(--primary-light-grey);
+    border-right: 1px solid var(--primary-light-grey);
+}
+
+.dayCell,
+.dayName,
+.singleDayName {
+    flex: 1 0 68px;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+
+.dayName {
+    display: flex;
+    flex-direction: column;
+    padding: 13px;
+}
+
+.singleDayName {
+    display: flex;
+    align-items: center;
+    height: max-content;
+    padding-left: 24px;
+}
+
+.dayName > span:first-child,
+.singleDayName > span:first-child {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.singleDayName > span:first-child {
+    padding-right: 12px;
+    border-right: 1px solid var(--grey);
+}
+
+.singleDayName > span:last-child {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    padding-left: 12px;
+    color: var(--secondary-dark-grey);
+}
+
+.dayName > span:last-child {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    color: var(--secondary-dark-grey);
+}
+
+.isToday {
+    display: inline-block;
+    margin-left: 10px;
+    width: 8px;
+    height: 8px;
+    background-color: var(--blue);
+    border-radius: 50%;
+}
+
+.event {
+    width: 100%;
+    padding: 7px 8px;
+    position: absolute;
+    border-left: 8px solid var(--blue);
+    background-color: var(--blue-background);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.event:hover{
+    background-color: var(--blue-background-hover);
+    color: var(--blue);
+}
+
+.event > span {
+    width: 100%;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}

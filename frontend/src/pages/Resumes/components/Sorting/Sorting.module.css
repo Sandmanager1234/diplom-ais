@@ -1,0 +1,92 @@
+.wrap {
+    background: var(--white);
+}
+
+.sortingList {
+    display: grid;
+    grid-template-columns: 1fr 23.231% 18.809% 11.91% 1fr;
+    padding: 0 68px;
+    border-top: 1px solid var(--primary-light-grey);
+    font: 16px/22px RobotoMedium, sans-serif;
+}
+
+.sortingItem {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px 8px 16px 15px;
+    border-right: 1px solid var(--primary-light-grey);
+    cursor: default;
+}
+
+.sortingItem button {
+    height: 24px;
+    border: none;
+    background: none;
+}
+
+.sortingItem button:disabled svg path {
+    stroke: var(--secondary-dark-grey);
+}
+
+.sortingItem svg:hover, .sortingItem svg:hover path {
+    stroke: var(--blue-hover);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.sortingItem:first-child {
+    padding-left: 0;
+}
+
+.sortingItem:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.imageActive svg path {
+    stroke: var(--blue-hover);
+}
+
+.select {
+    position: absolute;
+    right: 0;
+    top: 56px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    font: 16px/22px RobotoRegular, sans-serif;
+    background: var(--white);
+    box-shadow: var(--primary-box-shadow);
+}
+
+.selectItem {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 32px;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.selectItem:hover {
+    background: var(--secondary-light-grey);
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1650px) {
+    .sortingList {
+        grid-template-columns: 1fr 1fr 22.5% 19.022%;
+    }
+    .sortingItem:last-child {
+        display: none;
+    }
+    .sortingItem:nth-child(4) {
+        border-right: none;
+    }
+}

@@ -1,0 +1,32 @@
+.noEventsBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.noEvents {
+  width: 200px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: var(--black);
+  text-align: center;
+}
+
+.btn {
+  padding: 16px 114.5px;
+  border: none;
+  border-radius: 5px;
+  background-color: var(--blue);
+  font-size: 16px;
+  line-height: 18.75px;
+  font-weight: 600;
+  color: var(--white);
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--blue-hover);
+}

@@ -1,0 +1,43 @@
+.deleteModal {
+    width: 558px;
+    padding: 40px 44px 40px 32px;
+}
+
+.titleDelete {
+    margin-bottom: 8px;
+    font: 500 24px/28px 'RobotoMedium', sans-serif;
+}
+.contentDelete {
+    margin-bottom: 32px;
+    font: 400 16px/140% 'RobotoRegular', sans-serif;
+}
+.btns {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+.btnYes, .btnNo {
+    width: 28.67%;
+    height: 50px;
+    font: 400 16px/20px 'RobotoRegular', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btnYes {
+    background: transparent;
+    border: 1px solid #EFF0F5;
+}
+.btnYes:hover {
+    background:  #EFF0F5;
+    color: #2969FF;
+    transition: .3s;
+}
+.btnNo {
+    color: white;
+    background: #2969FF;
+    border: none;
+}
+.btnNo:hover {
+    background: #0246E7;
+    transition: .3s;
+}

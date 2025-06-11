@@ -1,0 +1,13 @@
+.summaryExperience {
+  margin-bottom: 6px;
+  padding: 13px 24px;
+  background: #eff0f5;
+  border: none;
+  border-radius: 5px;
+  font: 400 24px/140% 'RobotoRegular', sans-serif;
+}
+
+.summaryExperience span {
+  font: 500 24px/34px Roboto;
+  color: #2969ff;
+}

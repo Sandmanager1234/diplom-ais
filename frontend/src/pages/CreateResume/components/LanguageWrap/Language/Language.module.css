@@ -1,0 +1,34 @@
+.wrap {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wrapLanguage{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btnDelete {
+    position: absolute;
+    left: 660px;
+    top: 39px;
+    height: 15px;
+    width: 15px;
+    margin-bottom: 18px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnDelete svg path {
+    stroke: var(--primary-dark-grey);
+}
+
+.hidden{
+    display: none;
+}

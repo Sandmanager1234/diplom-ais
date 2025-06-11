@@ -1,0 +1,73 @@
+.wraper {
+  position: relative;
+}
+
+.dateRange {
+  display: flex;
+  gap: 50px;
+  margin-top: 40px;
+  font: 16px/20px RobotoRegular, sans-serif;
+}
+
+.dateDisplay, .dateDisabled {
+  flex: 1 1 auto;
+  margin-left: 37px;
+  padding: 15px 16px;
+  width: 155px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 6px;
+}
+
+.dateDisabled{
+  pointer-events: none;
+}
+
+.dateDisplay span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--black);
+}
+
+.dateDisplay input {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  border-width: 0;
+  align-content: center;
+  resize: none;
+  outline: none;
+  color: var(--black);
+}
+
+.dateDisplay button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  width: max-content;
+}
+
+.startDate,
+.startDateError,
+.endDate,
+.endDateError {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  max-width: 450px;
+  height: 80px;
+  padding: 15px 28px;
+  border-radius: 6px;
+  background: var(--secondary-light-grey);
+}
+
+.startDateError,
+.endDateError {
+  border: 1px solid var(--red-error);
+}

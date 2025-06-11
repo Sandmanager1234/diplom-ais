@@ -1,0 +1,64 @@
+.documentsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--white);
+  color: var(--black);
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.documentsHeader {
+  font: 500 18px/1.17 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.documentsWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.documentsWrapper > button {
+  background-color: #eff0f5;
+  border-radius: 5px;
+  padding: 5.5px 10px 5.5px 10px;
+  margin: 0;
+  border: none;
+}
+
+.documentsWrapper button:hover {
+  cursor: pointer;
+}
+
+.documentsWrapper > button:hover svg path {
+  stroke: #2969ff;
+}
+
+.document {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  width: 100%;
+  padding: 10px 19px 10px 12px;
+  background: #eff0f5;
+  border: none;
+  border-radius: 5px;
+  font: 400 16px/22px 'RobotoRegular', sans-serif;
+  cursor: pointer;
+}
+
+.document:hover svg path {
+  stroke: var(--blue);
+}
+
+.document p {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

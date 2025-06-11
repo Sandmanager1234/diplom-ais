@@ -1,0 +1,73 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 556px;
+    padding: 41px 57px 25px 30px;
+}
+
+.title {
+    margin-bottom: 16px;
+    font: 500 24px/28px Roboto;
+    color: var(--black);
+}
+
+.notificationWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.notificationItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.authorName {
+    font: 400 14px/16px Roboto;
+    color: var(--blue);
+}
+
+.name {
+    font: 400 16px/21px Roboto;
+    color: var(--black);
+}
+
+.time {
+    font: 400 14px/17px Roboto;
+    color: var(--secondary-dark-grey);
+}
+
+.btnWrap {
+    display: flex;
+    gap: 20px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--primary-light-grey)
+}
+
+.btnWrap button {
+    font: 400 14px/18px Roboto;
+    color: var(--primary-dark-grey);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.btnWrap button:hover {
+    color: var(--blue);
+    transition: .25s;
+}
+
+.btnCreate {
+    align-self: start;
+    margin-top: 16px;
+    font: 400 16px/20px Roboto;
+    color: var(--blue);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    transition: .25s;
+}

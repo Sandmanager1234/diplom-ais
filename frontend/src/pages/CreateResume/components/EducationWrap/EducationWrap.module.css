@@ -1,0 +1,118 @@
+.formStyle {
+    width: 100%;
+}
+
+.wrapEducation {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    width: 640px;
+}
+
+.title {
+    font: 500 24px/28px RobotoMedium;
+}
+
+.navEducation {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font: 400 16px/20px Roboto;
+    color: var(--black);
+}
+form > div.wrapEducation > div.navEducation::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+/*.wrapEducation div:nth-child(2)::after {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    bottom: 0;*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: 1px;*/
+/*    border-bottom: 1px solid var(--primary-light-grey);*/
+/*}*/
+
+.btnMethod, .btnMethodActive, .btnMethodErrorActive, .btnErrorActive {
+    padding-bottom: 12px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+}
+.btnMethodErrorActive{
+    color: var(--red);
+    border-bottom: 2px solid var(--red);
+}
+.btnErrorActive{
+    color: var(--red);
+}
+
+.btnMethodActive{
+    color: var(--blue);
+    border-bottom: 2px solid var(--blue);
+}
+
+.btnAddField {
+    border: none;
+    outline: none;
+    background: transparent;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.btnAddField:disabled{
+    color: var(--primary-light-grey);
+    cursor: default;
+}
+
+.btnAddField:hover:enabled {
+    color: var(--blue-hover);
+}
+
+.wrapBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 640px;
+}
+
+.btnContinue {
+    order: 3;
+    height: 50px;
+    width: 160px;
+    margin-top: 30px;
+    font: 400 16px/20px RobotoRegular;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnContinue:hover {
+    border: 1px solid var(--blue);
+}
+
+
+.btnBack{
+    height: fit-content;
+    width: fit-content;
+    margin: auto 40px auto 40px;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--blue);
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

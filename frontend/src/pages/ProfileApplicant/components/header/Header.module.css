@@ -1,0 +1,102 @@
+.header {
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    justify-content: space-between;
+    width: 100%;
+    padding: 25px 68px;
+    background: white;
+    border-bottom: 1px solid #DEE3EF;
+}
+
+.navButtons, .settings {
+    display: flex;
+    align-items: center;
+}
+
+.navLink {
+    color: black;
+    font: 400 16px/120% 'RobotoRegular', sans-serif;
+    text-decoration: none;
+}
+
+.navLink:hover {
+    color: #2969FF;
+}
+
+.disabledLink {
+    color: #656263;
+    font: 400 16px/120% 'RobotoRegular', sans-serif;
+}
+
+.settings {
+    gap: 15px;
+}
+
+.historyBtn, .secondaryBtn, .secondaryBtn svg path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EFF0F5;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bellBtn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EFF0F5;
+    height: 50px;
+    width: 50px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.bellBtn:hover svg path {
+    fill: var(--blue);
+}
+
+.historyBtn:active, .secondaryBtn:active, .historyBtn:hover, .secondaryBtn:hover {
+    color: var(--blue-hover);
+    transition: 0.3s;
+}
+
+.historyBtn {
+    padding: 16px;
+    font: 400 16px/140% 'RobotoRegular';
+}
+
+.historyBtn svg {
+    margin-right: 10px;
+}
+
+.historyBtn:hover svg path {
+    fill: var(--blue-hover);
+    transition: 0.3s;
+}
+
+.secondaryBtn {
+    padding: 13px;
+}
+
+.secondaryBtn:hover svg path {
+    stroke: var(--blue-hover);
+    transition: 0.3s;
+}
+
+.disableBookmark {
+    fill: transparent;
+}
+
+.activeBookmark {
+    fill: var(--blue);
+    stroke: var(--blue);
+}
+
+.activeBookmark g path {
+    stroke: var(--blue);
+}

@@ -1,0 +1,208 @@
+.wrap {
+    display: flex;
+    align-items: center;
+}
+
+.authWrap {
+    display: flex;
+    flex-direction: column;
+    /*align-items: center;*/
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.authBlock {
+    align-self: center;
+    width: 66.667%;
+}
+
+.title {
+    margin-bottom: 10px;
+    font: 500 32px/38px Roboto;
+    color: var(--black);
+}
+
+.subTitle {
+    margin-bottom: 40px;
+    font: 400 16px/22px Roboto;
+    color: var(--black);
+}
+
+.loginWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.passwordBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.passTitle {
+    font: 400 14px/18px Roboto;
+    color: var(--primary-dark-grey);
+    margin-bottom: 4px;
+}
+
+.passInput {
+    position: relative;
+    display: flex;
+}
+
+.inputStyle, .inputError {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    padding-left: 16px;
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 6px;
+    font: 500 16px/20px Roboto;
+    color: var(--black);
+    outline: none;
+}
+
+.inputError {
+    border: 1px solid var(--red-error);
+}
+
+.inputStyle:invalid[focused='true'] {
+    border: 1px solid var(--red-error);
+}
+
+.inputStyle:focus {
+    border: 1px solid var(--blue);
+}
+
+.btnShowPass {
+    position: absolute;
+    top: 13px;
+    right: 16px;
+    align-self: flex-end;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnShowPass:hover svg path {
+    fill: var(--black);
+}
+
+.error {
+    display: block;
+    margin-top: 10px;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+.btnEnter {
+    height: 50px;
+    width: 160px;
+    margin-top: 50px;
+    font: 400 16px/22px Roboto;
+    border-radius: 6px;
+    border: none;
+    background: var(--blue);
+    color: var(--white);
+    cursor: pointer;
+}
+
+.btnEnter:disabled {
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    font: 400 16px/22px Roboto;
+    color: var(--black);
+    outline: none;
+    background: transparent;
+    cursor: default;
+}
+
+.btnEnter:hover:enabled {
+    background: var(--blue-hover);
+}
+
+.svgWrap {
+    position: relative;
+    height: 100vh;
+    width: 50%;
+    background: var(--secondary-light-grey);
+    overflow: hidden;
+}
+
+.figureUp {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.figureDown {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.box {
+    height: 50px;
+    width: 160px;
+    border-radius: 6px;
+    background: var(--blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 15px;
+    width: 105px;
+}
+
+.circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: #fff;
+    animation: move 500ms linear 0ms infinite;
+    margin-right: 30px;
+}
+
+.circle:first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: grow 500ms linear 0ms infinite;
+}
+
+.circle:last-child {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 0;
+    animation: grow 500ms linear 0s infinite reverse;
+}
+
+
+@keyframes grow {
+    from {
+        transform: scale(0, 0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0px)
+    }
+    to {
+        transform: translateX(45px)
+    }
+}

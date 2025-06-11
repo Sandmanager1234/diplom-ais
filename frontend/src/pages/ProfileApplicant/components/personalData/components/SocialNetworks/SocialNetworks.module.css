@@ -1,0 +1,63 @@
+.contacts {
+  display: flex;
+  max-width: 100%;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 24px;
+  font: 400 16px/140% 'Roboto', sans-serif;
+}
+
+.telephoneNumber,
+.mail {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 25px;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.mail > span {
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mail > div {
+  min-width: 24px;
+  max-height: 24px;
+}
+
+.socialNetworks {
+  display: flex;
+  align-items: start;
+  flex-direction: row;
+  gap: 24px;
+  padding-top: 16px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #dee3ef;
+}
+
+.socialNetworks > a {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.socialNetworks > a > span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+}
+
+.socialNetworksNone {
+  display: none;
+}
+
+.socialNetworks a:hover svg path {
+  fill: #2969ff;
+}

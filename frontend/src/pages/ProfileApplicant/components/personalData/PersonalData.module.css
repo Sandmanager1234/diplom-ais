@@ -1,0 +1,11 @@
+.personalData {
+    width: 451px;
+    min-height: calc(100vh - 100px);
+    padding: 40px 40px 40px 64px;
+    border-right: 1px solid #DEE3EF;
+    background: #EFF0F5;
+}
+.moreVerticalWrap {
+    display: flex;
+    justify-content: flex-end;
+}

@@ -1,0 +1,135 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 40px 50px 67px;
+}
+
+.title {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    /*margin-top: 15px;*/
+    color: var(--black);
+    font: 500 20px/26px Roboto, sans-serif;
+}
+
+.title span {
+    font: 400 20px/26px Roboto, sans-serif;
+    color: var(--primary-dark-grey);
+}
+
+.wrapSortFilter {
+    margin-top: 23px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.filters {
+    display: flex;
+    gap: 16px;
+}
+
+.activeFilter {
+    padding: 5px 16px;
+    border-radius: 5px;
+    border: none;
+    font: 400 16px/22px Roboto, sans-serif;
+    color: var(--white);
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.unActiveFilter {
+    padding: 5px 16px;
+    border-radius: 5px;
+    border: none;
+    font: 400 16px/22px Roboto, sans-serif;
+    color: var(--black);
+    background: var(--secondary-light-grey-hover);
+    cursor: pointer;
+}
+
+.sort {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border: none;
+    font: 400 16px/22px Roboto, sans-serif;
+    color: var(--black);
+    background: transparent;
+    cursor: pointer;
+}
+
+.sort:disabled, .sort:disabled .image svg path {
+    stroke: var(--primary-dark-grey);
+    color: var(--primary-dark-grey);
+}
+
+.wrapSorting {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 38px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 16px 0;
+    font: 16px/22px RobotoRegular, sans-serif;
+    background: var(--white);
+    box-shadow: var(--primary-box-shadow);
+}
+
+.priorityValue, .activePriorityValue {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    height: 32px;
+    padding: 0 15px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.priorityValue:hover {
+    background: var(--secondary-light-grey);
+}
+
+.activePriorityValue {
+    background: var(--secondary-light-grey);
+}
+
+.activePriorityValue svg path {
+    stroke: var(--blue-hover);
+}
+
+.imageActive svg path {
+    stroke: var(--blue-hover);
+}
+
+.wrapList{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.btnCreateTask {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 160px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 16px;
+    font: 400 16px/20px Roboto;
+    color: var(--white);
+    background: var(--blue);
+    cursor: pointer;
+    transition: .25s;
+}
+
+.btnCreateTask:hover {
+    background: var(--blue-hover);
+    transition: .25s;
+}

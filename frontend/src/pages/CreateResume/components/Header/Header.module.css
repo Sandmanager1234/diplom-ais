@@ -1,0 +1,95 @@
+.wrapHeader {
+    margin-bottom: 50px;
+}
+
+.pageDemo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 31px;
+    font: 400 16px/22px RobotoRegular;
+    color: var(--black);
+}
+
+.currentPage {
+    color: var(--primary-dark-grey);
+    cursor: default;
+}
+
+.linkStyle {
+    font: 400 16px/22px RobotoRegular;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.linkStyle:hover {
+    color: var(--blue);
+}
+
+.fillingSteps {
+    display: flex;
+    gap: 6px;
+    margin-top: 24px;
+}
+
+.stepWrap, .stepWrapActive {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+    font: 400 16px/22px RobotoRegular;
+    outline: none;
+    border: none;
+    background: transparent;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.stepWrapActive {
+    color: var(--blue);
+}
+
+.ellipseNumber, .ellipseNumberActive, .ellipseCurrentActiveNumber, .ellipseError {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+    background: var(--secondary-light-grey);
+    border-radius: 50%;
+    font: 400 16px/22px RobotoRegular;
+    color: var(--black);
+}
+
+.ellipseError{
+    background: var(--red-error);
+    color: var(--white);
+}
+
+.ellipseCurrentActiveNumber {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.ellipseNumberActive {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.stepWrap:hover {
+    color: var(--blue);
+    cursor: pointer;
+}
+
+@media (max-width: 1650px) {
+    .nameStep {
+        display: none;
+    }
+    .activeStep{
+        display: block;
+    }
+}
+    

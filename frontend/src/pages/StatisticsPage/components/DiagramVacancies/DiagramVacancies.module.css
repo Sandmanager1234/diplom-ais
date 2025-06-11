@@ -1,0 +1,13 @@
+.diagramAverageDays {
+    max-width: 90%;
+    max-height: 721px;
+    margin-bottom: 50px;
+}
+
+.diagramTitle{
+    color: var(--primary-dark-grey);
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}

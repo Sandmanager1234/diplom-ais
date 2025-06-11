@@ -1,0 +1,17 @@
+.nameGrid {
+  border-bottom: solid 1px #989898;
+  padding-bottom: 5px;
+}
+
+.mainGrid {
+  --borderColor: #000;
+  border-top: solid 2px var(--borderColor);
+}
+
+.column {
+  min-height: 800px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 25px;
+}

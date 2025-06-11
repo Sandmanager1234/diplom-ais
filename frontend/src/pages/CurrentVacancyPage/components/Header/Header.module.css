@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 25px 64px;
+  border-bottom: 1px solid var(--secondary-light-grey-hover);
+}
+
+.header div {
+  align-self: center;
+  height: max-content;
+}
+
+.header span {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: var(--primary-dark-grey);
+  pointer-events: none;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+  color: var(--black);
+  text-decoration: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+

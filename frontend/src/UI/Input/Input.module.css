@@ -1,0 +1,60 @@
+.defaultInput, .mediumInput, .salaryInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.mediumInput {
+    width: 48.438%;
+}
+
+.defaultInput {
+    width: 100%;
+}
+
+.salaryInput {
+    width: 83%;
+}
+
+.title {
+    font: 400 14px/18px RobotoRegular;
+    color: var(--primary-dark-grey);
+    margin-bottom: 4px;
+}
+
+.inputStyle, .inputErrorStyle {
+    height: 50px;
+    padding-left: 15px;
+    font: 500 16px/20px RobotoMedium;
+    color: var(--black);
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 6px;
+    outline: none;
+}
+
+.inputStyle:focus {
+    border: 1px solid var(--blue);
+}
+
+.inputStyle:invalid[focused='true']{
+    border: 1px solid var(--red-error);
+}
+
+.inputErrorStyle{
+    border: 1px solid var(--red-error);
+}
+
+.error{
+    display: none;
+}
+
+.inputStyle:invalid[focused='true'] ~ .error{
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+.activeError{
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}

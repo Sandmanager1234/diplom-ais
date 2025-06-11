@@ -1,0 +1,121 @@
+.activeRow, .activeRowLeft, .activeRowRight {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-left: 6px;
+    font: 400 12px/20px Roboto;
+    color: var(--black);
+    background: rgba(41, 105, 255, 0.1);
+    cursor: default;
+}
+
+.activeRowLeft, .activeRowRight {
+    width: 50%;
+}
+
+.activeRowRight {
+    left: 50%;
+}
+
+.activeRow > span, .activeRowLeft > span, .activeRowRight > span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.wrapModal {
+    position: relative;
+}
+
+.modal {
+    z-index: 3;
+    position: absolute;
+    top: -32px;
+    right: -375px;
+    width: 364px;
+    padding: 32px 24px;
+    border-radius: 8px;
+    background: var(--white);
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    cursor: default;
+}
+
+.title {
+    margin-bottom: 20px;
+    color: var(--black);
+    font: 500 24px/28px Roboto;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.blockInfo {
+    display: flex;
+    gap: 16px;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+
+.blockInfo span {
+    font: 400 14px/20px Roboto;
+    color: var(--secondary-dark-grey);
+}
+
+.blockInfo div {
+    display: flex;
+    flex-direction: column;
+    font: 400 16px/22px Roboto;
+    color: var(--black);
+}
+
+.blockInfo a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+.blockInfo a:hover {
+    color: var(--blue);
+}
+
+.ellipse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 24px;
+    width: 24px;
+    font: 400 12px/14px Roboto !important;
+    border-radius: 50%;
+    background: var(--secondary-light-grey);
+}
+
+.btnWrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.btnAction {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    font: 400 16px/22px Roboto, sans-serif;
+    color: var(--black);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.btnAction svg path {
+    stroke: var(--black);
+    transition: .25s;
+}
+
+.btnAction:hover {
+    color: var(--blue);
+    transition: .25s;
+}
+
+.btnAction:hover svg path {
+    stroke: var(--blue);
+    transition: .25s;
+}

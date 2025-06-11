@@ -1,0 +1,1 @@
+export {default as EventContentChildren} from './EventContentChildren'

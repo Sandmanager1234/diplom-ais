@@ -1,0 +1,85 @@
+.wrap {
+    padding: 40px 70px 0 67px;
+}
+
+.navigate {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigate div {
+    display: flex;
+    gap: 16px;
+}
+
+.btnCreateEvent {
+    height: 40px;
+    width: 124px;
+    border-radius: 5px;
+    border: none;
+    font: 400 16px/19px Roboto;
+    color: var(--white);
+    background: var(--blue);
+    transition: .25s;
+    cursor: pointer;
+}
+
+.btnCreateEvent:hover {
+    background: var(--blue-hover);
+    transition: .25s;
+}
+
+.btnArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    background: var(--secondary-light-grey-hover);
+    cursor: pointer;
+}
+
+.btnArrow:first-child {
+    transform: rotate(180deg);
+}
+
+.btnArrow svg path {
+    stroke: var(--black);
+    transition: .25s;
+}
+
+.btnArrow:hover svg path {
+    stroke: var(--blue);
+    transition: .25s;
+}
+
+.calendarWrap {
+    position: relative;
+    display: flex;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    margin-top: 18px;
+    border: 1px solid var(--primary-light-grey);
+    background: var(--white);
+}
+
+.wrapColDay {
+    width: 100%;
+}
+
+.dynamicLine {
+    z-index: 2;
+    position: absolute;
+    width: calc(100% - 16px);
+    height: 1px;
+    margin-left: 16px;
+    background: var(--blue);
+}
+
+.dynamicLine::after {
+    position: absolute;
+    bottom: -8px;
+    left: -1px;
+}

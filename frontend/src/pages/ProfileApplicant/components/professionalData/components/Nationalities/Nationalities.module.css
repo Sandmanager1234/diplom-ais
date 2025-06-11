@@ -1,0 +1,26 @@
+.titleInfo {
+  color: var(--primary-dark-grey);
+  font: 400 14px/19px 'RobotoRegular', sans-serif;
+  margin-bottom: 8px;
+}
+
+.fieldInfo {
+  display: flex;
+  gap: 70px;
+  padding: 20px 0;
+  border-bottom: 1px solid #dee3ef;
+}
+
+.infoCountry {
+  font: 500 16px/140% 'RobotoMedium', sans-serif;
+  margin: 0;
+  width: 250px;
+  padding-top:8px;
+}
+
+.workPermitInfo {
+  font: 500 16px/140% 'RobotoMedium', sans-serif;
+  padding-top: 8px;
+  margin: 0;
+  width: 250px;
+}

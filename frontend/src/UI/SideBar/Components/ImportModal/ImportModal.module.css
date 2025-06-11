@@ -1,0 +1,132 @@
+.wrap {
+  width: 558px;
+  padding: 40px 32px;
+}
+
+.hiddenWrap {
+  display: none;
+}
+
+.title {
+  font: 500 24px/28px 'RobotoMedium', sans-serif;
+}
+
+.subtitle {
+  margin-top: 8px;
+  font: 400 16px/22px 'RobotoRegular', sans-serif;
+}
+
+.download {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  margin-top: 16px;
+  border: 1px dashed var(--primary-light-grey);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border 0.25s;
+}
+
+.download:hover {
+  border: 1px dashed var(--blue);
+  transition: border 0.25s;
+}
+
+.addFile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  background: var(--secondary-light-grey);
+  border-radius: 5px;
+}
+
+.downloadTitle {
+  margin-top: 8px;
+  font: 500 14px/20px 'RobotoMedium', sans-serif;
+  color: var(--black);
+}
+
+.downloadSubtitle {
+  font: 400 12px/17px 'RobotoRegular', sans-serif;
+  color: var(--primary-dark-grey);
+}
+
+.inputFile {
+  opacity: 0;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+
+.uploadedFile {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 50px;
+  padding: 16px 16px;
+  color: var(--black);
+  background: var(--secondary-light-grey);
+  border-radius: 6px;
+  cursor: default;
+}
+
+.fileName {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  font: 400 16px/18px Roboto;
+}
+
+.fileName span {
+  max-width: 408px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.filesWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 200px;
+  overflow: auto;
+  padding: 16px 0;
+}
+
+.deleteUploadedFile {
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btnImport {
+  width: 160px;
+  height: 50px;
+  margin-top: 24px;
+  color: var(--white);
+  background: var(--blue);
+  border: none;
+  border-radius: 5px;
+  font: 400 16px/20px 'RobotoRegular', sans-serif;
+  cursor: pointer;
+}
+
+.btnImport:disabled {
+  color: var(--black);
+  background: none;
+  border: 1px solid var(--primary-light-grey);
+}
+
+.sizeError {
+  color: var(--red-error);
+  text-align: center;
+  padding: 15px 0px;
+}

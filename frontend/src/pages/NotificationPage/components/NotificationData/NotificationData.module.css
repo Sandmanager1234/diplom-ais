@@ -1,0 +1,62 @@
+.wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+    padding: 40px 40px 40px 61px;
+}
+
+.controlNav {
+    display: flex;
+    gap: 40px;
+}
+
+.controlBtn, .controlBtn svg path {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    font: 400 16px/22px Roboto;
+    color: var(--black);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.controlBtn:hover, .controlBtn:hover svg path {
+    color: var(--blue);
+    stroke: var(--blue);
+    transition: .25s;
+}
+
+.uncheckCheckbox {
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid var(--primary-light-grey);
+}
+
+.listNotification {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titleNoneNotification{
+    margin-top: 53px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-self: center;
+    font: 500 24px/34px Roboto, sans-serif;
+    color: var(--black);
+    text-align: center;
+}
+
+.titleNoneNotification > span{
+    font: 500 16px/22px Roboto, sans-serif;
+    color: var(--black);
+    text-align: center;
+}

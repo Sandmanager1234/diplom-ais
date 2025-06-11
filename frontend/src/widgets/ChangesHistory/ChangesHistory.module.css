@@ -1,0 +1,203 @@
+.modalHistory {
+    padding: 41px 30px 30px 30px;
+    max-width: 637px;
+    display: flex;
+    flex-direction: column;
+}
+
+.titleChange {
+    margin-bottom: 28px;
+    font: 500 24px/28px 'RobotoMedium', sans-serif;
+}
+.listChangeWrapper{
+    flex: 0 1 70vh;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.listChange {
+    max-height: 100%;
+    padding-right: 14px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.listChangeItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 100%;
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+.listItemEmail {
+    font: 400 12px/21px Roboto;
+    width: 100px;
+    overflow: hidden;
+    background-color: #a4a4a4;
+    color: var(--black);
+    border-radius: 3px;
+    padding: 2px;
+}
+.listItemFio {
+    font: 500 18px/21px Roboto;
+}
+.listItemComment {
+    font: 400 18px/21px Roboto;
+    color: var(--black);
+}
+
+.listItemDate {
+    font: 400 14px/16px Roboto;
+    color: var(--secondary-dark-grey);
+}
+
+.btnWrapComment {
+    display: flex;
+    gap: 20px;
+}
+
+.btnComment {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font: 400 14px/18px Roboto;
+    color: var(--primary-dark-grey);
+}
+
+.btnComment:hover {
+    color: var(--blue);
+}
+
+.minListChange {
+    max-height: 275px;
+    padding-right: 14px;
+    overflow: auto;
+    margin-bottom: 16px;
+}
+
+.listChange::-webkit-scrollbar, .minListChange::-webkit-scrollbar {
+    width: 3px;
+    left: 14px;
+}
+
+.listChange::-webkit-scrollbar-track, .minListChange::-webkit-scrollbar-track {
+    width: 2px;
+    background: #EFF0F5;
+    border-radius: 10px;
+}
+
+.listChange::-webkit-scrollbar-thumb, .minListChange::-webkit-scrollbar-thumb {
+    background-color: #2969FF;
+    border-radius: 10px;
+}
+
+.btnAddChange {
+    color: #2969FF;
+    font: 400 16px/20px 'RobotoRegular', sans-serif;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnAddChangeNone {
+    display: none;
+}
+
+.formCommentNone {
+    display: none;
+}
+.formNewComment{
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+}
+.formComment {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    position: sticky;
+    top: 0;
+}
+
+.inputWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputText, .inputTime, .inputTextError, .inputTimeError {
+    width: 605px;
+    height: 50px;
+    font: 400 16px/130% 'RobotoRegular', sans-serif;
+    border: 1px solid #E1E1E1;
+    border-radius: 6px;
+    outline: none;
+}
+
+.inputText, .inputTextError {
+    width: 100%;
+    height: 50px;
+    padding: 10px 10px;
+    resize: none;
+}
+
+.inputTime {
+    width: 55.76%;
+}
+
+.inputTime::-webkit-calendar-picker-indicator, .inputTimeError::-webkit-calendar-picker-indicator {
+    opacity: 0;
+}
+
+.inputText::placeholder, .inputTextError::placeholder .inputTime::placeholder, .inputTimeError::placeholder {
+    font: 400 16px/130% 'RobotoRegular', sans-serif;
+}
+
+.inputTextError, .inputTimeError {
+    border: 1px solid #FF2936;
+}
+
+.error {
+    color: #FF2936;
+    font: 400 14px/20px 'RobotoRegular', sans-serif;
+}
+
+.buttonsAddChange {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.submitForm, .closeForm {
+    width: 28.67%;
+    height: 50px;
+    font: 400 16px/20px 'RobotoRegular', sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitForm {
+    color: white;
+    background: #2969FF;
+    border: none;
+}
+
+.submitForm:hover {
+    background: #0246E7;
+    transition: .3s;
+}
+
+.closeForm {
+    background: transparent;
+    border: 1px solid #EFF0F5;
+}
+
+.closeForm:hover {
+    background: #EFF0F5;
+    color: #2969FF;
+    transition: .3s;
+}

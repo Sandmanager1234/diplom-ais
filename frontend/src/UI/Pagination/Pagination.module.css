@@ -1,0 +1,84 @@
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 24px;
+}
+
+.listPages {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.numCards {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--secondary-dark-grey);
+    font: 14px/16px RobotoRegular, sans-serif;
+}
+
+.numPages, .quantity, .quantityInvalid {
+    font: 16px/19px RobotoMedium, sans-serif;
+}
+
+.numPages span {
+    color: var(--blue);
+}
+
+.quantity, .quantityInvalid {
+    text-align: center;
+    width: 50px;
+    height: 30px;
+    padding: 0 5px;
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 5px;
+    transition: .5s border;
+    outline: none;
+}
+
+.quantityInvalid {
+    border: 1px solid var(--red-error);
+    transition: .5s border;
+}
+
+.error {
+    position: absolute;
+    right: 0;
+    top: 35px;
+    color: var(--red-error);
+    transition: .5s;
+}
+
+.leftArrow, .rightArrow, .upArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border: 1px solid var(--black);
+    border-radius: 100px;
+    background: none;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.leftArrow, .leftArrow:disabled {
+    transform: rotate(180deg);
+}
+
+.leftArrow:disabled, .rightArrow:disabled {
+    border: 1px solid var(--primary-light-grey);
+}
+.leftArrow:disabled path, .rightArrow:disabled path {
+    fill: var(--primary-light-grey);
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

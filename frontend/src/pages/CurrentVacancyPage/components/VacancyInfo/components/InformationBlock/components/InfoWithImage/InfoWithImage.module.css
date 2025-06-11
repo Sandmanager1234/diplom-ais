@@ -1,0 +1,9 @@
+.wrapper {
+  display: flex;
+}
+
+.wrapper > span {
+  font-size: 16px;
+  line-height: 22.4px;
+  color: var(--black);
+}

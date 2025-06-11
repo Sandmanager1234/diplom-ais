@@ -1,0 +1,31 @@
+.fieldInfo {
+  padding: 20px 0;
+  border-bottom: 1px solid #dee3ef;
+}
+
+.titleInfo {
+  color: var(--primary-dark-grey);
+  font: 400 14px/19px 'RobotoRegular', sans-serif;
+}
+
+.keySkillsItems {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-top: 8px;
+}
+
+.skillItem {
+  padding: 3px 10px;
+  background: #2969ff;
+  border: none;
+  max-width: 80%;
+  border-radius: 5px;
+  color: #ffffff;
+  font: 400 14px/22px 'RobotoRegular', sans-serif;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: default;
+}

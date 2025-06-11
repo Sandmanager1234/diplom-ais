@@ -1,0 +1,210 @@
+.nameBlock {
+  max-width: 346px;
+  width: 100%;
+  display: flex;
+}
+
+.avatar {
+  display: flex;
+  max-width: 50px;
+  max-height: 50px;
+  min-width: 50px;
+  min-height: 50px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #1D1F31;
+  color: #FFFFFF;
+  margin-left: 14px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 22.4px;
+}
+
+.nameBlock div {
+  display: flex;
+  max-width: 268px;
+  flex-direction: column;
+  margin-inline: 14px;
+}
+
+.nameText {
+  line-height: 22.4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #231f20;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.nameText:hover {
+  color: #2969FF;
+}
+
+.ageText {
+  line-height: 22.4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #656263;
+}
+
+.phoneNumber {
+  line-height: 22.4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #231f20;
+  margin-top: 12px;
+}
+
+.experienceBlock,
+.noExperience {
+  max-width: 384px;
+  width: 100%;
+  margin-inline: 14px;
+}
+
+.noExperience {
+  line-height: 22.4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.experienceData {
+  display: flex;
+  flex-direction: column;
+}
+
+.experiencePosition {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  line-height: 22.4px;
+  font-size: 16px;
+  font-weight: 500;
+  color: #231f20;
+  margin-bottom: 4px;
+  max-height: 22.4px;
+}
+
+.experienceDescriptions {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 22.4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #656263;
+  max-height: 44.8px;
+}
+
+.experienceDate {
+  line-height: 22.4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #656263;
+}
+
+.allExperience {
+  height: 32px;
+  width: max-content;
+  padding: 5px 16px;
+  border-radius: 5px;
+  background-color: #eff0f5;
+  margin-top: 19px;
+}
+
+.allExperience span {
+  line-height: 22.4px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.lengthOfServiceText {
+  color: #231f20;
+}
+
+.lengthOfService {
+  padding-left: 10px;
+  color: #2969ff;
+}
+
+.experienceText {
+  line-height: 22.4px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #2969ff;
+}
+
+.vacancy {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #E1E1E1;
+  border-radius: 6px;
+  padding: 16px;
+}
+
+.jobTitle {
+  font-size: 16px;
+  width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-weight: 500;
+  color: #231f20;
+  margin-bottom: 5px;
+}
+
+.grade,
+.company {
+  line-height: 15.4px;
+  font-size: 14px;
+  margin-bottom: 5px ;
+  font-weight: 400;
+  color: #656263;
+  margin-top: 6px;
+}
+
+.grade,
+.company {
+  font-weight: 400;
+  color: #656263;
+  margin-top: 6px;
+}
+
+.statusBlock {
+  max-width: 295px;
+  width: 100%;
+}
+
+.iconBlock {
+  width: 52px;
+  height: 24px;
+  display: flex;
+  gap: 4px;
+}
+
+.checkbox.checkbox.checkbox {
+  width: 24px;
+  height: 24px;
+  padding: 0;
+}
+
+.checkbox.checkbox.checkbox:hover {
+  background-color: transparent;
+}
+
+.checkbox.checkbox.checkbox:hover path {
+  stroke: #2969ff;
+}
+
+.vacanciesLength{
+padding-top: 10px;
+  border-top: 1px solid #EFF0F5;
+}
+
+.vacanciesLength>span{
+  padding: 4px 10px;
+  border-radius: 5px;
+  background-color: #EFF0F5;
+}

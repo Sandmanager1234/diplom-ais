@@ -1,0 +1,192 @@
+.createEventWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 1072px;
+  min-height: 866px;
+  height: max-content;
+  border-radius: 8px;
+}
+
+.form {
+  padding: 30px 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.checkboxWrap {
+  display: flex;
+  flex-direction: row;
+  gap: 48px;
+  width: fit-content;
+  margin-top: 25px;
+}
+
+.inputCheckbox {
+  display: none;
+}
+
+.checkboxContainer {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+  font: 400 16px/20px Roboto;
+  color: var(--black);
+  cursor: pointer;
+}
+
+.checkboxContainer:hover .checkboxIndicator {
+  outline: 1px solid var(--blue);
+}
+
+.checkboxIndicator {
+  height: 15px;
+  width: 15px;
+  outline: 1px solid var(--primary-light-grey);
+  border-radius: 2px;
+}
+
+.checkboxContainer input:checked + .checkboxIndicator {
+  outline: 1px solid var(--blue);
+  background-image: url('/src/assets/images/checkmark.svg');
+  background-repeat: no-repeat;
+  background-size: 60% auto;
+  background-color: var(--blue);
+  background-position: center;
+}
+
+.btnSave {
+  height: 50px;
+  width: 160px;
+  border-radius: 5px;
+  border: none;
+  margin-top: 32px;
+  font: 400 16px/19px Roboto;
+  color: var(--white);
+  background: var(--blue);
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.btnSave:hover {
+  background: var(--blue-hover);
+  transition: 0.25s;
+}
+
+.btnSave:disabled {
+  background: var(--primary-light-grey);
+  cursor: default;
+}
+
+.inputWrap {
+  position: relative;
+}
+
+.wrapMail {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.wrapMail > div {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  height: 27px;
+  max-width: 100%;
+  padding: 0 8px;
+  font: 400 14px/22px Roboto;
+  color: var(--white);
+  background: var(--blue);
+  border-radius: 5px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mailName {
+  max-width: 95%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btnDelete {
+  z-index: 1;
+  /*position: relative;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 13px;
+  width: 13px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.dropValues {
+  z-index: 2;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 482px;
+  border-radius: 8px;
+  background: var(--white);
+  padding: 14px 12px;
+  filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.08));
+}
+
+.dropValues button {
+  display: flex;
+  flex-direction: column;
+  font: 500 16px/22px Roboto;
+  color: var(--black);
+  padding: 6px;
+  text-align: left;
+  background: transparent;
+  border-radius: 4px;
+  transition: 0.25s;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.dropValues button span {
+  font: 500 14px/20px Roboto;
+  color: var(--secondary-dark-grey);
+}
+
+.dropValues button:hover,
+.dropValues button:focus {
+  background: var(--secondary-light-grey);
+  transition: 0.25s;
+}
+
+.directoryType {
+  font: 12px/20px RobotoRegular, sans-serif;
+  color: var(--secondary-dark-grey);
+}
+
+.applicantInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.circle {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--secondary-dark-grey);
+}
+
+.error {
+  width: 100%;
+  display: block;
+  font: 400 14px/20px Roboto;
+  color: var(--red-error);
+}

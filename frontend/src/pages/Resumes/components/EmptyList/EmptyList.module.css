@@ -1,0 +1,25 @@
+.emptyList {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 42px;
+    background: var(--secondary-light-grey);
+    text-align: center;
+}
+
+.title {
+    color: var(--black);
+    font: 24px/34px RobotoMedium, sans-serif;
+}
+
+.subTitle {
+    color: var(--black);
+    font: 16px/22px RobotoRegular, sans-serif;
+    text-align: center;
+}
+
+.subTitle a {
+    color: var(--blue);
+    font: 16px/22px RobotoBold, sans-serif;
+    text-decoration: none;
+}

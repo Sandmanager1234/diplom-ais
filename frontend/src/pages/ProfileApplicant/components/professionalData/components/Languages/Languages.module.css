@@ -1,0 +1,22 @@
+.fieldInfo {
+  padding: 20px 0;
+  border-bottom: 1px solid #dee3ef;
+}
+
+.fieldInfo:last-child {
+  border: none;
+}
+
+.titleInfo {
+  color: var(--primary-dark-grey);
+  font: 400 14px/19px 'RobotoRegular', sans-serif;
+  margin-bottom: 8px;
+}
+
+.infoLanguages {
+  font: 400 16px/140% 'RobotoRegular', sans-serif;
+}
+
+.infoLanguages span {
+  font: 500 16px/140% 'RobotoBold', sans-serif;
+}

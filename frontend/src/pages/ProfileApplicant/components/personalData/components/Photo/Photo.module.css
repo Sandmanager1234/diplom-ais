@@ -1,0 +1,15 @@
+.profileIcon, .profilePhoto {
+	height: 60px;
+	width: 60px;
+	border: none;
+	border-radius: 50px;
+}
+
+.profileIcon {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #FFFFFF;
+	font: 400 16px/140% 'RobotoRegular', sans-serif;
+	background-color: #1D1F31;
+}

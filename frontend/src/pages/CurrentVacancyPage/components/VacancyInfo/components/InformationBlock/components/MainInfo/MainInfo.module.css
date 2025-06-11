@@ -1,0 +1,21 @@
+.vacancyTitle {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+  color: var(--black);
+}
+
+.grade,
+.salary {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--black);
+}
+
+.grade {
+  line-height: 20px;
+}
+
+.salary {
+  line-height: 22.4px;
+}

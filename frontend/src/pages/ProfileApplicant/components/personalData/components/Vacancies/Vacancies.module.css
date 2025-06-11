@@ -1,0 +1,87 @@
+.vacanciesContainer {
+  display: flex;
+  flex-direction: column;
+  max-height: 262px;
+  background-color: var(--white);
+  color: var(--black);
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 24px;
+}
+
+.vacanciesWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vacanciesWrapper > button {
+  background-color: #eff0f5;
+  border-radius: 5px;
+  padding: 5.5px 10px 5.5px 10px;
+  margin: 0;
+  border: none;
+}
+
+.vacanciesWrapper button:hover {
+  cursor: pointer;
+}
+
+.vacanciesWrapper > button:hover svg path {
+  stroke: #2969ff;
+}
+
+.vacanciesHeader {
+  font: 500 18px/1.17 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.vacanciesList {
+  display: flex;
+  flex-direction: column;
+  max-height: 180px;
+  overflow: auto;
+  gap: 12px;
+}
+
+.vacancy {
+  width: 100%;
+  margin-top: 12px;
+  padding: 10px 19px 10px 12px;
+  background: #eff0f5;
+  border: none;
+  border-radius: 5px;
+  font: 400 16px/22px 'RobotoRegular', sans-serif;
+  cursor: pointer;
+}
+
+.vacancyHeader {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  color: var(--black);
+  text-decoration: none;
+  gap: 8px;
+}
+
+.vacancyHeader svg path {
+  stroke: var(--black);
+}
+
+.vacancyHeader:hover svg path {
+  stroke: var(--blue);
+}
+
+.vacancyHeader p {
+  max-width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.status {
+  margin-left: 5px;
+}

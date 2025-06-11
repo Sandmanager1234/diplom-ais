@@ -1,0 +1,70 @@
+.wrapInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--primary-dark-grey);
+    font: 14px/18px RobotoRegular, sans-serif;
+}
+
+.wrapInputs div {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.from, .to {
+    position: absolute;
+    top: 12px;
+    color: var(--secondary-dark-grey);
+    font: 16px/22px RobotoRegular, sans-serif;
+}
+
+.from {
+    left: 16px;
+}
+
+.to {
+    left: 156px;
+}
+
+.wrapInputs div input {
+    width: 50%;
+    height: 46px;
+    padding: 0 16px 0 50px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    color: var(--black);
+    font: 16px/20px RobotoMedium, sans-serif;
+    text-align: end;
+    outline: none;
+}
+
+.wrapInputs div input:invalid {
+    border: 1px solid var(--red-error);
+}
+
+.wrapSelects {
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.selectCurrency, .selectCurrencyActive {
+    width: 33%;
+    height: 34px;
+    border-radius: 6px;
+    border: none;
+    color: var(--black);
+    font: 16px/18px RobotoRegular, sans-serif;
+    background: var(--secondary-light-grey);
+    cursor: pointer;
+}
+
+.selectCurrency:hover {
+    background-color: var(--secondary-light-grey-hover);
+}
+
+.selectCurrencyActive {
+    color: var(--white);
+    background: var(--blue);
+}

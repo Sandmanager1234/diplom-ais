@@ -1,0 +1,229 @@
+.filters {
+    z-index: 2;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 330px;
+    height: 100%;
+    background: var(--white);
+    box-shadow: var(--primary-box-shadow);
+    overflow: auto;
+}
+
+.filters::-webkit-scrollbar {
+    width: 3px;
+}
+.filters::-webkit-scrollbar-track {
+    background-color: var(--secondary-light-grey);
+}
+.filters::-webkit-scrollbar-thumb {
+    background-color: var(--blue);
+}
+.filters::-webkit-scrollbar-thumb {
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 8px 0 30px;
+    font: 20px/23px RobotoMedium, sans-serif;
+}
+
+.exitFilters {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.exitFilters:hover svg path {
+    stroke: var(--blue-hover);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 8px 30px 10px 30px;
+}
+
+.wrapInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: var(--primary-dark-grey);
+    font: 14px/18px RobotoRegular, sans-serif;
+}
+
+.wrapInputs div {
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.from, .to {
+    position: absolute;
+    top: 12px;
+    color: var(--secondary-dark-grey);
+    font: 16px/22px RobotoRegular, sans-serif;
+}
+
+.from {
+    left: 16px;
+}
+
+.to {
+    left: 156px;
+}
+
+.wrapInputs div input {
+    width: 50%;
+    height: 46px;
+    padding: 0 16px 0 50px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    color: var(--black);
+    font: 16px/20px RobotoMedium, sans-serif;
+    text-align: end;
+    outline: none;
+}
+
+.wrapInputs div input:invalid {
+    border: 1px solid var(--red-error);
+}
+
+.buttonResetAndApply {
+    position: sticky;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 97px;
+    padding: 0 30px;
+    border-top: 1px solid var(--secondary-light-grey);
+    background: var(--white);
+}
+
+.buttonReset, .buttonApply {
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.buttonReset {
+    border: 1px solid var(--primary-light-grey);
+    background: var(--white);
+    color: var(--black);
+}
+
+.buttonApply {
+    border: none;
+    background: var(--blue);
+    color: var(--white);
+}
+
+.buttonReset:hover {
+    color: var(--blue);
+    background: var(--secondary-light-grey);
+    transition: .25s;
+}
+
+.buttonApply:hover {
+    background: var(--blue-hover);
+    transition: .25s;
+}
+
+.wrapSkills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.skill {
+    position: relative;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    height: 27px;
+    padding: 0 8px;
+    font: 400 14px/22px Roboto;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+
+.skill svg {
+    position: absolute;
+    right:8px;
+}
+
+.skill:hover {
+    background-color: var(--blue-hover);
+}
+
+.btnDelete{
+    z-index: 1;
+    position: relative;
+    height: 13px;
+    width: 13px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnImage{
+    position: absolute;
+    right:8px;
+}
+
+.viewResumeChecker {
+    display: flex;
+    gap: 10px;
+    font: 16px/20px RobotoRegular, sans-serif;
+    color: var(--black);
+}
+
+.inputCheckbox {
+    display: none;
+}
+
+.checkboxContainer, .checkboxContainerActive {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.checkboxContainer:hover .checkboxIndicator {
+    outline: 1px solid var(--blue);
+}
+
+.checkboxIndicator {
+    height: 15px;
+    width: 15px;
+    outline: 1px solid var(--primary-light-grey);
+    border-radius: 2px;
+}
+
+.checkboxContainer input:checked + .checkboxIndicator, .checkboxContainerActive input:checked + .checkboxIndicator {
+    outline: 1px solid var(--blue);
+    background-image: url("/src/assets/images/checkmark.svg");
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-color: var(--blue);
+    background-position: center;
+}
+
+.checkboxContainerActive {
+    color: var(--blue);
+}
+
+.hidden {
+    display: none;
+}

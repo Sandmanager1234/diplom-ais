@@ -1,0 +1,12 @@
+.currentVacancyPageWrapper{
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+}
+
+.vacancyInformation {
+  margin: 15px;
+}

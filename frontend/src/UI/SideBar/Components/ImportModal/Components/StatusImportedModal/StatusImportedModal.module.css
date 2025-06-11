@@ -1,0 +1,90 @@
+.wrap {
+
+    width: 558px;
+    padding: 40px 32px;
+}
+
+.title {
+    font: 500 24px/28px 'RobotoMedium', sans-serif;
+}
+
+.wrap  .errorImport:last-of-type{
+    margin-bottom: 35px;
+}
+
+.successImport{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 16px;
+    margin-top: 24px;
+    border-radius: 6px;
+    background: #E2F6E8;
+}
+
+.successImport> span{
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+    font: 400 12px/17px Roboto;
+}
+
+.successImport p{
+   font: 600 14px/20px Roboto;
+}
+
+.errorImport{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    margin-top: 24px;
+    font: 400 16px/21px Roboto;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+
+.subtitle, .subtitles {
+    margin-top: 8px;
+    font: 400 16px/22px 'RobotoRegular', sans-serif;
+}
+
+.subtitles {
+    margin-bottom: 15px;
+}
+
+.subtitle > span {
+    color: var(--red);
+}
+
+.btnDownload {
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font: 400 16px/22px 'RobotoRegular', sans-serif;
+    padding: 15px 26px;
+    /*margin-top: 50px;*/
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.btnSubmit {
+    width: 160px;
+    height: 50px;
+    margin-top: 24px;
+    background: var(--blue);
+    border-radius: 5px;
+    margin-left: 30px;
+    font: 400 16px/20px 'RobotoRegular', sans-serif;
+    cursor: pointer;
+    color: var(--black);
+    background: none;
+    border: 1px solid var(--primary-light-grey);
+}
+
+.blue{
+    color: var(--blue) !important;
+}
+
+.green{
+    color: var(--green)!important;
+}

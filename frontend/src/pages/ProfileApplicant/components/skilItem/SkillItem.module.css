@@ -1,0 +1,9 @@
+.item {
+    width: fit-content;
+    padding: 2.5px 10px;
+    background: #2969FF;
+    border: none;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font: 400 14px/22px 'RobotoRegular', sans-serif;
+}

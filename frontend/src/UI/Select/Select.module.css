@@ -1,0 +1,38 @@
+.select {
+    z-index: 1;
+    position: absolute;
+    right: 0;
+    top: 56px;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0;
+    font: 16px/22px RobotoRegular, sans-serif;
+    background: var(--white);
+    box-shadow: var(--primary-box-shadow);
+}
+
+.selectItem, .selectItemActive {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-height: 32px;
+    height: fit-content;
+    padding: 0 15px;
+    cursor: pointer;
+}
+
+.selectItemActive {
+    background: var(--secondary-light-grey);
+}
+
+.selectItemActive svg path {
+    stroke: var(--blue-hover);
+}
+
+.selectItem:hover {
+    background: var(--secondary-light-grey);
+}
+
+.hidden {
+    display: none;
+}

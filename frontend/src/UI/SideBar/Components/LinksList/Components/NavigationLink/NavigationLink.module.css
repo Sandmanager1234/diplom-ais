@@ -1,0 +1,81 @@
+
+.navigationLinkOpen,
+.navigationLinkClose,.navigationLinkOpenActive {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 10px;
+    height: 36px;
+    padding: 0 16px 0 8px;
+    color: var(--white);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: width 1s;
+}
+
+.navigationLinkOpen svg path {
+    stroke: var(--blue);
+}
+.navigationLinkOpen:hover,
+.navigationLinkClose:hover {
+    background-color: var(--secondary-dark-blue-hover);
+    transition: background-color 0.5s;
+}
+
+.navigationLinkOpenActive{
+    background-color: var(--secondary-dark-blue-hover);
+}
+
+.navigationLinkClose svg path {
+    stroke: var(--blue);
+}
+
+.navigationLinkClose {
+    justify-content: center;
+    width: 50px;
+    padding: 0;
+    border-radius: 5px;
+    transition: width 1s;
+}
+
+.navigationBlock {
+    display: flex;
+    align-items: center;
+    position: relative;
+    gap: 10px;
+}
+
+.titleNavLink {
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.titleNavLinkHidden {
+    position: absolute;
+    opacity: 0;
+}
+
+.notificationLink {
+    position: relative;
+    width: 100%;
+    height: 36px;
+}
+
+.notificationLink > a {
+    width: 100%;
+}
+
+.unreadNotification {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 17px;
+    width: 17px;
+    font: 700 12px/14px Roboto, sans-serif;
+    color: var(--blue);
+    border-radius: 50%;
+    background: #00e995;
+}

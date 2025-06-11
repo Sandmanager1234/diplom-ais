@@ -1,0 +1,14 @@
+.aboutContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: var(--black);
+  font: 400 16px/1.4 'RobotoRegular', sans-serif;
+}
+
+.createdAt {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+}

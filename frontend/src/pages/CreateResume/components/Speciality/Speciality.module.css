@@ -1,0 +1,113 @@
+.formStyle {
+    width: 100%;
+}
+
+.wrapSpeciality {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    width: 640px;
+}
+
+.positionField {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.error {
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+.wrapBtn {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.wrapSkills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    width: 100%;
+}
+
+.skill {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    height: 27px;
+    max-width: 100%;
+    padding: 0 8px;
+    font: 400 14px/22px Roboto;
+    color: var(--white);
+    background: var(--blue);
+    border-radius: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.skill svg{
+    position: absolute;
+    right: 8px;
+}
+
+.skillName {
+    max-height: 100%;
+    max-width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.btnDelete {
+    z-index: 1;
+    position: relative;
+    height: 13px;
+    width: 13px;
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.wrapSalary {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btnContinue {
+    height: 50px;
+    width: 160px;
+    margin-top: 14px;
+    font: 400 16px/20px RobotoRegular;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnContinue:hover {
+    border: 1px solid var(--blue);
+}
+
+
+.btnBack{
+    height: fit-content;
+    width: fit-content;
+    margin: auto 40px auto 40px;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--blue);
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

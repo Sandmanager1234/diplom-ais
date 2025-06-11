@@ -1,0 +1,50 @@
+.card {
+  background: #fff;
+  border-top: 2px solid #2969ff;
+  height: 240px;
+  width: 200px;
+  box-shadow: 0.3em 0.3em 1em rgba(0, 0, 0, 0.1);
+}
+
+.contentWrapper {
+  padding: 20px 0.5em 0.5em;
+}
+
+.spanBlock {
+  margin-top: 10px;
+}
+
+.graySpan {
+  margin-top: 0;
+  font-size: 14px;
+  color: gray;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.blackSpan {
+  margin-top: 0;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+
+.nameSpan{
+  margin-top: 0;
+  font-size: 16px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+}
+
+.lowerBlock {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+}

@@ -1,0 +1,19 @@
+.image,
+.alternativeImage {
+  flex: 0 0 auto;
+}
+
+.alternativeImage {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blue);
+}
+
+.alternativeImage span {
+  color: var(--white);
+  font-size: 10px;
+}

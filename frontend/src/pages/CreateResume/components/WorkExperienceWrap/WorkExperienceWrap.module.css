@@ -1,0 +1,92 @@
+.formStyle {
+    width: 100%;
+}
+
+.wrapWorkExperience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    width: 640px;
+}
+
+.title {
+    font: 500 24px/28px Roboto;
+    color: var(--black);
+}
+
+.wrapExperience {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+    cursor: default;
+}
+
+.experience {
+    margin-top: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--primary-light-grey);
+    font: 400 16px/20px RobotoRegular;
+    color: var(--secondary-dark-grey);
+}
+
+.subTitle {
+    width: 100%;
+    margin-top: 8px;
+    font: 400 16px/18px RobotoRegular;
+    color: var(--primary-dark-grey);
+}
+
+.btnAddField {
+    border: none;
+    outline: none;
+    background: transparent;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.btnAddField:disabled {
+    color: var(--primary-light-grey);
+    cursor: default;
+}
+
+.btnAddField:hover:enabled {
+    color: var(--blue-hover);
+}
+
+.wrapBtn {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.btnContinue {
+    height: 50px;
+    width: 160px;
+    margin-top: 14px;
+    font: 400 16px/20px RobotoRegular;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnContinue:hover {
+    border: 1px solid var(--blue);
+}
+
+
+.btnBack{
+    height: fit-content;
+    width: fit-content;
+    margin: auto 40px auto 40px;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--blue);
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

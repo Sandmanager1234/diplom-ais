@@ -1,0 +1,106 @@
+.responsible {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 0;
+    color: var(--white);
+    font-size: 16px;
+    position: relative;
+}
+
+.responsible > svg {
+    height: 30px;
+    width: 30px;
+}
+
+.responsible > svg > path {
+    stroke: var(--white);
+}
+
+.dropDown {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 180px;
+}
+
+.dropDown > button > svg > path {
+    fill: white;
+}
+
+.dropDown > span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+.dropDown:hover {
+    cursor: pointer;
+    color: #2969ff;
+}
+
+.dropDown:hover > button > svg > path {
+    fill: #2969ff;
+}
+
+.dropDownActive {
+    color: #2969ff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    max-width: 180px;
+}
+
+.dropDownActive > span {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.arrowBtn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transform: translateY(-7%);
+}
+
+.dropDownActive > button > svg > path {
+    fill: #2969ff;
+}
+
+.selectHr {
+    gap: 6px;
+    z-index: 1;
+    position: absolute;
+    top: 34px;
+    max-height: 100px;
+    overflow: scroll;
+    left: 0;
+    width: 347px;
+    padding: 12px 12px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 2px 24px rgba(0, 0, 0, 0.1);
+    cursor: default;
+}
+
+.hidden {
+    display: none;
+}
+
+.hrDropDown {
+    color: #231f20;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.hrDropDown:hover {
+    cursor: pointer;
+    background-color: #eff0f5;
+}

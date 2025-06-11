@@ -1,0 +1,29 @@
+.btn, .btnActive, .btnInactive, .btnActiveFill {
+    height: 42px;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: var(--white);
+    border-radius: 5px;
+    color: var(--black);
+    box-shadow: none;
+}
+
+.btnActive, .btnActiveFill {
+    border: 1px solid var(--blue);
+}
+
+.btnInactive {
+    border: 1px solid var(--primary-light-grey);
+}
+
+.btnActiveFill {
+    background-color: var(--blue);
+    color: var(--white);
+    font-weight: 600;
+}

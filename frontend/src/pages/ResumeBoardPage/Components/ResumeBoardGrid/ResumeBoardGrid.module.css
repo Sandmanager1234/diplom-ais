@@ -1,0 +1,9 @@
+.divider {
+  border-left: 1px solid #989898;
+  margin-right: -1px;
+}
+
+div.contentGrid {
+  min-width: 1500px;
+  flex-wrap: nowrap;
+}

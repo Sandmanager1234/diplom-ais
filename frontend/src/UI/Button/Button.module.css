@@ -1,0 +1,64 @@
+.primary, .secondary, .roundDark, .roundPrimary, .roundSecondary, .grey {
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.primary, .secondary {
+    border-radius: 5px;
+}
+
+.roundDark, .roundPrimary, .roundSecondary {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.primary, .roundPrimary  {
+    color: var(--white);
+    background-color: var(--blue);
+    transition: background .5s;
+}
+
+.primary:hover, .roundPrimary:hover, .roundDark:hover {
+    background-color: var(--blue-hover);
+    transition: background-color .5s;
+}
+
+.secondary, .roundSecondary {
+    color: var(--black);
+    background-color: var(--white);
+    transition: background-color .5s;
+}
+
+.secondary:hover, .roundSecondary:hover {
+    border: none;
+    color: var(--blue);
+    transition: background-color .5s;
+}
+
+.roundDark {
+    background-color: var(--secondary-dark-blue-hover);
+}
+
+.roundSecondary:hover svg path, .grey:hover svg path {
+    stroke: var(--blue-hover);
+    transition: .5s;
+}
+
+.grey {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--black);
+    border-radius: 5px;
+    background: var(--secondary-light-grey);
+    transition: .5s;
+}
+
+.grey:hover {
+    color: var(--blue-hover);
+    transition: .5s;
+}

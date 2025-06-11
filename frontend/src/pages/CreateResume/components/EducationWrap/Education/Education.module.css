@@ -1,0 +1,69 @@
+.wrap {
+    width: 100%;
+}
+
+.wrapEducation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.tipEndYear {
+    width: 48.438%;
+    padding-top: 30px;
+    font: 400 14px/18px Roboto;
+    color: var(--primary-dark-grey);
+}
+
+.cardWrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px 20px 40px 25px;
+    border-radius: 6px;
+    background: var(--secondary-light-grey);
+}
+
+.navCard {
+    display: flex;
+    justify-content: space-between;
+    font: 400 16px/22px Roboto;
+    color: var(--black);
+}
+
+.btnEdit {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnEdit svg g path{
+    stroke: var(--primary-dark-grey);
+}
+
+.btnEdit:hover svg g path{
+    stroke: var(--blue);
+}
+
+.btnEdit:hover svg path{
+    stroke: var(--blue);
+}
+
+.yearEducate {
+    margin-top: 22px;
+    font: 400 16px/22px Roboto;
+    color: var(--secondary-dark-grey);
+}
+
+.universityName {
+    margin-top: 8px;
+    font: 500 16px/20px Roboto;
+    color: var(--black);
+}
+
+.faculty {
+    margin-top: 16px;
+    font: 400 16px/21px Roboto;
+    color: var(--black);
+}

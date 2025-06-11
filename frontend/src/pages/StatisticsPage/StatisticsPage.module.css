@@ -1,0 +1,66 @@
+.wrap {
+    flex: 1;
+    font-family: RobotoRegular, sans-serif;
+    background: var(--secondary-light-grey);
+}
+
+.filterContainer{
+    justify-content: space-between;
+}
+
+.innerFilterContainer{
+    display: flex;
+}
+
+.filterContainer, .buttonsContainer{
+    display: flex;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--secondary-light-grey-hover);
+    align-items: center;
+}
+
+.filterContainer{
+    padding-right: 40px;
+}
+
+.diagramsContainer{
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-bottom: 10px;
+}
+
+.filter{
+    display: flex;
+    color:  var(--primary-dark-grey);
+    font-size: 16px;
+    font-weight: 400;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.loader {
+    height: 50px;
+    display: flex;
+}
+
+.selectYear{
+    height: 42px;
+    width: fit-content;
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    background-color: var(--white);
+    border-radius: 5px;
+    color: var(--black);
+    box-shadow: none;
+    border: 1px solid var(--primary-light-grey);
+}
+
+.hidden{
+    display: none;
+}

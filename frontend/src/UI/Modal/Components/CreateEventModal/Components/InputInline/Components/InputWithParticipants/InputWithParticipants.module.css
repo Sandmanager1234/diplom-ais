@@ -1,0 +1,7 @@
+.inputWithParticipantsWrapper{
+  flex: 1 1 auto;
+  position: relative;
+	display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

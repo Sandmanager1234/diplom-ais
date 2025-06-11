@@ -1,0 +1,24 @@
+.initials {
+	margin: 10px 0 16px 0;
+	font: 500 24px/130% 'RobotoMedium', sans-serif;
+}
+
+.initials p {
+	width: 100%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	margin: 0;
+	padding: 0;
+}
+
+.info {
+	padding: 0 0 24px 0;
+	margin-bottom: 24px;
+	border-bottom: 1px solid #DEE3EF;
+}
+
+.gender, .dateBirth, .address {
+	display: flex;
+	align-items: flex-start;
+	gap: 8px;
+}

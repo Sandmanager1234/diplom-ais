@@ -1,0 +1,182 @@
+.wrap {
+    padding: 47px 61px;
+    width: 1072px;
+}
+
+.title {
+    font: 500 32px/38px Roboto;
+    color: var(--black);
+}
+
+.priorityWrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: 500 16px/20px Roboto;
+    color: var(--black);
+    margin: 12px 0 40px;
+}
+
+.low, .middle, .high {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
+
+.high {
+    background: var(--red);
+}
+
+.middle {
+    background: var(--orange);
+}
+
+.low {
+    background: var(--green);
+}
+
+.description {
+    display: flex;
+    flex-wrap: wrap;
+    /*width: 100%;*/
+    font: 400 16px/20px Roboto;
+    color: var(--black);
+    padding-bottom: 50px;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+
+.hrWrap {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+
+.infoHr {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.infoHr > span {
+    font: 400 14px/18px Roboto;
+    color: var(--primary-dark-grey);
+}
+
+.info {
+    display: flex;
+    gap: 16px;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    font: 400 16px/20px Roboto;
+    color: var(--white);
+    border-radius: 50%;
+    background: var(--primary-dark-blue);
+}
+
+.info > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font: 500 14px/20px Roboto;
+    color: var(--black);
+}
+
+.info > div > span {
+    font: 400 12px/20px Roboto;
+    color: var(--secondary-dark-grey);
+}
+
+.time {
+    display: flex;
+    gap: 20px;
+}
+
+.time > div {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    font: 400 14px/18px Roboto;
+    color: var(--primary-dark-grey);
+}
+
+.time > div > span {
+    font: 400 16px/20px Roboto;
+    color: var(--black);
+}
+
+.wrapStatus {
+    display: flex;
+    gap: 16px;
+}
+
+.activeStatus, .disableStatus {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 32px;
+    padding: 5px 16px;
+    border-radius: 5px;
+    font: 400 16px/22px Roboto;
+    color: var(--white);
+    border: none;
+    background: var(--blue);
+    cursor: pointer;
+    transition: .25s;
+}
+
+.disableStatus {
+    background: var(--secondary-light-grey-hover);
+    color: var(--black);
+}
+
+.disableStatus:hover {
+    color: var(--white);
+    background: var(--blue);
+    transition: .25s;
+}
+
+.wrapControl{
+    display: flex;
+    gap: 41px;
+}
+
+.wrapBtn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+
+.btnEdit {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font: 400 16px/22px Roboto;
+    color: var(--black);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.btnEdit:hover {
+    color: var(--blue);
+    transition: .25s;
+}
+
+.btnEdit svg path {
+    stroke: var(--black);
+    transition: .25s;
+}
+
+.btnEdit:hover svg path {
+    stroke: var(--blue);
+    transition: .25s;
+}

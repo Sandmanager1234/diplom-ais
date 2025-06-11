@@ -1,0 +1,208 @@
+.professionalData {
+    position: relative;
+    background: white;
+    margin-left: 37px;
+    max-width: 637px;
+}
+
+
+.statusField {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 13px;
+    border-bottom: 1px solid #DEE3EF;
+}
+
+.moreStatus {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.moreStatus:hover svg path {
+    stroke: #2969FF;
+    transition: .3s;
+}
+
+.moreStatusActive {
+    border: none;
+    background: transparent;
+}
+
+.moreStatusActive svg path {
+    stroke: #2969FF;
+}
+
+.statusProfile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font: 400 16px/20px 'RobotoRegular', sans-serif;
+}
+
+.statusWrap{
+    position: relative;
+}
+
+.positionSalary {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 24px 0 20px 0;
+    font: 500 24px/28px 'RobotoMedium', sans-serif;
+    border-bottom: 1px solid #DEE3EF;
+}
+
+.positionSalary > div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.positionSalary > div > h2 {
+    font: 500 24px/28px 'RobotoMedium', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: fit-content;
+}
+/*
+.attainments {
+    border-bottom: 1px solid #DEE3EF;
+}
+
+.attainments .fieldInfo:last-child {
+    border: none;
+}*/
+
+.titleInfo {
+    color: var(--primary-dark-grey);
+    font: 400 14px/19px 'RobotoRegular', sans-serif;
+    margin-bottom: 8px;
+}
+
+.infoGrade {
+    font: 400 16px/20px 'RobotoRegular', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.infoLanguages {
+    font: 400 16px/140% 'RobotoRegular', sans-serif;
+}
+
+.infoLanguages span {
+    font: 500 16px/140% 'RobotoBold', sans-serif;
+}
+
+.infoCountry {
+    font: 500 16px/140% 'RobotoMedium', sans-serif;
+    margin: 0 0 24px;
+}
+
+.summaryExperience {
+    margin-bottom: 6px;
+    padding: 13px 24px;
+    background: #EFF0F5;
+    border: none;
+    border-radius: 5px;
+    font: 400 24px/140% 'RobotoRegular', sans-serif;
+}
+
+.summaryExperience span {
+    font: 500 24px/34px Roboto;
+    color: #2969FF;
+}
+
+.keySkillsItems {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.skillItem {
+    padding: 3px 10px;
+    background: #2969FF;
+    border: none;
+    max-width: 80%;
+    border-radius: 5px;
+    color: #FFFFFF;
+    font: 400 14px/22px 'RobotoRegular', sans-serif;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: default;
+}
+
+.endYear {
+    margin-top: 11px;
+    color: var(--black);
+    font: 400 14px/16px 'RobotoRegular', sans-serif;
+}
+
+.universityName {
+    margin-top: 8px;
+    font: 500 16px/19px 'RobotoMedium', sans-serif;
+}
+
+.organization {
+    color: var(--secondary-dark-grey);
+    font: 400 14px/19px 'RobotoRegular', sans-serif;
+}
+
+.specialization {
+    margin-top: 10px;
+    font: 400 14px/19px 'RobotoRegular', sans-serif;
+    color: var(--black);
+}
+
+.faculty {
+    color: var(--secondary-dark-grey);
+    font: 400 16px/19px 'RobotoRegular', sans-serif;
+}
+
+.documents {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.docItem {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 13px 10px 13px 10px;
+    background: #F0F4FF;
+    border: none;
+    border-radius: 5px;
+    font: 400 16px/22px 'RobotoRegular', sans-serif;
+    cursor: pointer;
+}
+
+.docItem svg {
+    margin-right: 8px;
+}
+
+.docItem:hover svg path {
+    stroke: #2969FF;
+}
+
+.titleDocuments {
+    margin-bottom: 16px;
+    font: 500 18px/21px 'RobotoMedium', sans-serif;
+}
+
+.employmentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 20px 0;
+    border-bottom: 1px solid #DEE3EF;
+}
+
+.employmentData {
+    font: 400 16px/20px 'RobotoRegular', sans-serif;
+    padding-top: 8px;
+    margin: 0;
+}

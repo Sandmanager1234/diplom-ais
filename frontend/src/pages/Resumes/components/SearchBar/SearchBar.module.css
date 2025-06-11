@@ -1,0 +1,360 @@
+.wrap {
+    padding: 46px 68px 0 68px;
+    background: var(--white);
+}
+
+.wrapPageName {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pageName {
+    font-size: 32px;
+    line-height: 37.5px;
+    font-weight: 500;
+    color: var(--black);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.searchBar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1400px;
+    padding-left: 16px;
+    margin: 16px 0;
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 5px;
+}
+
+.searchBar input {
+    width: 85%;
+    height: 50px;
+    padding-right: 16px;
+    border: none;
+    background: var(--white);
+    outline: none;
+}
+
+.searchBar input::placeholder {
+    background: var(--white);
+    color: var(--secondary-dark-grey);
+}
+
+.btnFilters {
+    display: flex;
+    gap: 15px;
+    height: 72px;
+}
+
+.fastFilter, .activeFastFilter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 32px;
+    padding: 0 16px;
+    color: var(--black);
+    border: none;
+    border-radius: 5px;
+    background: var(--secondary-light-grey);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.fastFilter:hover {
+    background: var(--secondary-light-grey-hover);
+    transition: .5s;
+    scale: 1.05;
+}
+
+.fastFilter div:last-child {
+    color: var(--blue);
+}
+
+.activeFastFilter {
+    color: var(--white);
+    background: var(--blue);
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: var(--secondary-light-grey);
+    border: none;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.reset svg path {
+    stroke: var(--secondary-dark-grey);
+}
+
+.reset:hover {
+    background-color: var(--blue);
+    transition: background-color .25s;
+    animation: pulse .25s 2;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    35% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.reset:hover svg path {
+    stroke: var(--white);
+}
+
+.submitBtn {
+    /*width: 11.545%;*/
+    min-width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--blue);
+    transition: background-color .5s;
+}
+
+.submitBtn:hover {
+    background-color: var(--blue-hover);
+    transition: background-color .5s;
+}
+
+.grey {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8.415%;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+    color: var(--black);
+    border-radius: 5px;
+    background: var(--secondary-light-grey);
+    transition: .5s;
+}
+
+.grey:hover {
+    color: var(--blue-hover);
+    transition: .5s;
+}
+
+.grey:hover svg path {
+    stroke: var(--blue-hover);
+    transition: .5s;
+}
+
+.activeFilterCounter {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    color: var(--white);
+    background-color: var(--blue);
+    border-radius: 100%;
+    font: 10px/14px RobotoRegular, sans-serif;
+}
+
+.suggest {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 212px;
+    width: 1400px;
+    max-height: 500px;
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 6px;
+    background: var(--white);
+    box-shadow: var(--primary-box-shadow);
+    overflow: auto;
+}
+
+.suggestItem {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 4px 16px 4px 16px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.directoryType {
+    font: 12px/20px RobotoRegular, sans-serif;
+    color: var(--secondary-dark-grey);
+}
+
+.suggestItem:hover {
+    color: var(--blue);
+}
+
+.suggestItem:first-child {
+    padding-top: 16px;
+}
+
+.suggestItem:last-child {
+    padding-bottom: 16px;
+}
+
+.suggests {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    gap: 10px;
+}
+
+.sug {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 25px;
+    padding: 8px;
+
+    border-radius: 6px;
+    color: white;
+    font: 14px/16px RobotoRegular, sans-serif;
+    background: var(--blue);
+    white-space: nowrap;
+}
+
+.sug > div {
+    max-width: 350px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.sug button {
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.sug:last-child {
+    margin-right: 15px;
+}
+
+.hidden {
+    display: none;
+}
+
+@media (max-width: 1650px) {
+
+    .wrap {
+        padding: 46px 40px 0 40px;
+    }
+
+    .submitBtn {
+        width: 18.8%;
+    }
+
+    .fastFilter, .activeFastFilter {
+        justify-content: space-between;
+        max-width: 179px;
+    }
+
+    .description {
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    .searchBar {
+        width: 90.316%;
+    }
+
+    .grey {
+        width: 50px;
+        height: 50px;
+        border-radius: 100%;
+    }
+
+    .titleFilter {
+        display: none;
+    }
+}
+
+.template {
+    width: 200px;
+    height: 32px;
+    border-radius: 5px;
+    background: var(--primary-light-grey);
+    box-shadow: 0 4px 10px 0 rgba(33, 33, 33, 0.15);
+    position: relative;
+    overflow: hidden;
+}
+
+.template:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -150px;
+    top: 0;
+    height: 100%;
+    width: 10px;
+    background: linear-gradient(to right, transparent 0%, var(--white) 50%, transparent 100%);
+    animation: load 1s cubic-bezier(0.4, 0.0, 0.2, 1) infinite;
+}
+
+.applicantInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.circle {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: var(--secondary-dark-grey);
+}
+
+@keyframes load {
+    from {
+        left: -150px;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+.java {
+    z-index: 20;
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 500px;
+    color: white;
+}

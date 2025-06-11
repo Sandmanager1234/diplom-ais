@@ -1,0 +1,65 @@
+.searchBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 32px 64px 40px 64px;
+  background-color: var(--white);
+}
+
+.searchBlock div {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+  border-radius: 5px;
+  border: var(--primary-light-grey) solid 1px;
+}
+
+.searchInput {
+  height: 50px;
+  width: 100%;
+  padding: 14px 0 14px 16px;
+  font-size: 16px;
+  line-height: 22.4px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+}
+
+.cleaning {
+  margin: 10px 16px;
+  border: none;
+  border-radius: 50%;
+  min-width: 30px;
+  height: 30px;
+  background-color: var(--secondary-light-grey);
+}
+
+.cleaning:hover {
+  cursor: pointer;
+  background-color: var(--blue);
+}
+
+.cleaning path {
+  stroke: var(--secondary-dark-grey);
+}
+
+.cleaning:hover path {
+  stroke: var(--white);
+}
+
+.searchButton {
+  height: 50px;
+  width: 155px;
+  padding: 15px 54px;
+  background-color: var(--blue);
+  font-size: 16px;
+  line-height: 20px;
+  color: var(--white);
+  border-radius: 5px;
+  border: none;
+}
+
+.searchButton:hover {
+  background-color: var(--blue-hover);
+  cursor: pointer;
+}

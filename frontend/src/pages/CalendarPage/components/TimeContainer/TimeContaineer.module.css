@@ -1,0 +1,19 @@
+.timeContaineer{
+  position: relative;
+}
+
+.currentTimeLine {
+  position: absolute;
+  z-index: 10;
+  width: 1114px;
+  height: 1px;
+  background-color: var(--blue);
+  left: 30px;
+}
+
+.currentTimeLine::after {
+  position: absolute;
+  bottom: -8px;
+  left: -1px;
+  content: url('../../../../assets/images/arrowOfTime.svg')
+}

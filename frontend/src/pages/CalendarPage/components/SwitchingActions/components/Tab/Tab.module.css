@@ -1,0 +1,25 @@
+.tab,
+.tabActive {
+  width: max-content;
+  height: 40px;
+  padding: 5px 16px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.tab {
+  background-color: var(--secondary-light-grey);
+  color: var(--black);
+}
+
+.tab:hover {
+  background-color: var(--secondary-light-grey-hover);
+}
+
+.tabActive {
+  background-color: var(--blue);
+  color: var(--white);
+}

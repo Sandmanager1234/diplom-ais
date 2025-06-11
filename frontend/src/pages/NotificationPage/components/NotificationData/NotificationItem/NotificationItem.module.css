@@ -1,0 +1,89 @@
+.wrapOutlined, .wrapPaintedOver {
+    display: flex;
+    width: 100%;
+    padding: 25px 20px;
+    border-radius: 6px;
+    cursor: default;
+}
+
+.wrapPaintedOver {
+    background: #e0e5fd;
+    border: 1px solid transparent;
+}
+
+.contentWrap {
+    display: flex;
+    width: 100%;
+    cursor: default;
+}
+
+.wrapOutlined {
+    border: 1px solid var(--secondary-light-grey);
+}
+
+.uncheckCheckbox {
+    min-width: 15px;
+    width: 15px;
+    height: 15px;
+    border-radius: 2px;
+    border: 1px solid var(--primary-light-grey);
+    cursor: pointer;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    min-width: 40px;
+    width: 40px;
+    margin: 0 15px 0 8px;
+    border-radius: 50%;
+    font: 16px/22px RobotoRegular, sans-serif;
+    background: var(--secondary-dark-blue);
+    color: var(--white);
+}
+
+.infoWrap {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    align-self: start;
+    font: 400 18px/21px Roboto;
+    color: var(--black);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.title:hover {
+    color: var(--blue);
+    transition: .25s;
+}
+
+.description {
+    margin: 6px 0 15px 0;
+    font: 400 14px/20px Roboto;
+    color: var(--primary-dark-grey);
+}
+
+.applicant {
+    font: 400 14px/20px Roboto;
+    color: var(--black);
+}
+
+.applicant a {
+    text-decoration: none;
+    color: var(--blue);
+    cursor: pointer;
+}
+
+.date {
+    min-width: fit-content;
+    font: 400 16px/22px Roboto;
+    color: var(--secondary-dark-grey);
+    margin-left: 53px;
+}

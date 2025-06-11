@@ -1,0 +1,11 @@
+const Statistics = () => (
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <rect x="4.51875" y="6.3" width="13.9217" height="14.4" rx="1.7" stroke="#2969FF" strokeWidth="1.4" strokeLinejoin="round"/>
+    <rect x="7.30469" y="14.2227" width="1.25217" height="2.88889" rx="0.3" fill="#2969FF"/>
+    <rect x="9.77344" y="12.7773" width="1.25217" height="4.33333" rx="0.3" fill="#2969FF"/>
+    <rect x="12.2344" y="10.6113" width="1.25217" height="6.5" rx="0.3" fill="#2969FF"/>
+    <rect x="14.7031" y="12.0557" width="1.25217" height="5.05556" rx="0.3" fill="#2969FF"/>
+  </svg>
+
+)
+export default Statistics

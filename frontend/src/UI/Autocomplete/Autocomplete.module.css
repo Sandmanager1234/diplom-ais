@@ -1,0 +1,109 @@
+.autocompleteWrap {
+    position: relative;
+    width: 100%;
+}
+
+.title {
+    font: 400 14px/18px RobotoRegular;
+    color: var(--primary-dark-grey);
+    margin-bottom: 5px;
+}
+
+.inputStyle {
+    display: flex;
+    height: 50px;
+    width: 100%;
+    padding-left: 16px;
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 6px;
+    outline: none;
+    font: 500 16px/20px Roboto;
+    color: var(--black);
+}
+
+.inputStyle:invalid[focused='true'] {
+    border: 1px solid var(--red-error)
+}
+
+.inputStyle:focus {
+    border: 1px solid var(--blue);
+}
+
+.skillsWrap {
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    max-height: 490px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 0 16px;
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 6px;
+    background: var(--white);
+    overflow: auto;
+}
+
+
+.skillsWrap::-webkit-scrollbar {
+    margin:12px;
+    padding: 12px;
+
+    width: 2px; /* ширина для вертикального скролла */
+    background-color: var(--secondary-light-grey);
+}
+
+/* ползунок скроллбара */
+.skillsWrap::-webkit-scrollbar-thumb {
+    margin:12px;
+padding: 12px;
+
+    background-color: var(--blue);
+    border-radius: 5px;
+}
+
+.skillsWrap::-webkit-scrollbar-track{
+    margin:12px;
+    padding: 12px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-hover);
+}
+
+.skillItem {
+    background: var(--white);
+    display: flex;
+    align-items: center;
+    height: 50px;
+    padding: 14px 0;
+    border: none;
+    border-bottom: 1px solid var(--primary-light-grey);
+    outline: none;
+    font: 500 16px/20px Roboto;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.skillItem:focus {
+    color: var(--blue);
+}
+
+.skillItem:last-child {
+    border: none;
+}
+
+.skillItem:hover {
+    color: var(--blue);
+}
+
+.hidden {
+    display: none;
+}
+
+.error{
+    margin-top: 5px;
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}

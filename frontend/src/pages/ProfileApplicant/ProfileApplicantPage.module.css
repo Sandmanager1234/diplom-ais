@@ -1,0 +1,43 @@
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.resumeItem {
+    flex: 1;
+}
+
+.tabsContainer{
+display: flex;
+    margin: 33px 12px 0 37px;
+    gap: 24px;
+}
+.content {
+    display: flex;
+
+}
+
+.tab,
+.tabActive {
+    width: max-content;
+    height: 38px;
+    padding: 5px 16px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    line-height: 22px;
+    cursor: pointer;
+}
+
+.tab {
+    background-color: var(--secondary-light-grey);
+    color: var(--black);
+}
+
+.tab:hover {
+    background-color: var(--secondary-light-grey-hover);
+}
+
+.tabActive {
+    background-color: var(--blue);
+    color: var(--white);
+}

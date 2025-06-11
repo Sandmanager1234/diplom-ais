@@ -1,0 +1,123 @@
+.titleNavLink {
+  opacity: 1;
+  transition: opacity 2.5s;
+}
+
+.titleNavLinkHidden {
+  position: absolute;
+  opacity: 0;
+}
+
+.openSidebar,
+.closeSidebar {
+  display: flex;
+  flex-direction: column;
+}
+
+.openSidebar,
+.closeSidebar {
+  width: 224px;
+  min-height: 100vh;
+  flex-shrink: 0;
+  background: var(--secondary-dark-blue);
+  transition: 0.5s;
+}
+
+.children {
+  position: fixed;
+  padding: 49px 24px 0 24px;
+  font: 16px RobotoRegular;
+}
+
+.closeSidebar {
+  width: 98px;
+}
+
+.buttonHideMenuOpen,
+.buttonHideMenuClose {
+  background-color: var(--secondary-dark-blue-hover);
+  transition: background-color 0.5s;
+}
+
+.buttonHideMenuOpen,
+.buttonHideMenuClose {
+  position: fixed;
+  bottom: 40px;
+  left: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border: none;
+  border-radius: 100%;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.buttonHideMenuClose {
+  left: 24px;
+}
+
+.buttonHideMenuOpen:hover,
+.buttonHideMenuClose:hover {
+  background-color: var(--blue-hover);
+}
+
+.buttonHideMenuClose svg {
+  rotate: 0deg;
+  transition: 0.5s;
+}
+
+.buttonHideMenuOpen svg {
+  rotate: 180deg;
+  transition: 0.5s;
+}
+
+.bookmark * {
+  fill: none;
+  stroke: var(--blue);
+}
+
+.logOut, .logOutClose {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 10px;
+  margin-top: 15px;
+  height: 36px;
+  padding: 0 16px 0 16px;
+  color: var(--white);
+  border-radius: 5px;
+  border: none;
+  text-decoration: none;
+  transition: width 1s;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.logOut:hover, .logOutClose:hover {
+  background-color: var(--secondary-dark-blue-hover);
+  transition: background-color 0.5s;
+}
+
+.logOutClose {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  gap: 15px;
+  margin-top: 21px;
+  width: 100%;
+  transition: width 1s;
+  align-items: center;
+}
+
+.logOutTitle {
+  opacity: 1;
+  transition: opacity 1.5s;
+}
+
+.logOutTitleClose {
+  position: absolute;
+  opacity: 0;
+}

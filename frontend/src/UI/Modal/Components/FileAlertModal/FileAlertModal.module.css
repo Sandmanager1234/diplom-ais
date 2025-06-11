@@ -1,0 +1,48 @@
+.alertModalWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 558px;
+    padding: 0 32px 40px;
+    background: #fff;
+    border-radius: 8px;
+    min-height: 266px;
+}
+.screeningFileAlert, .screeningFileSkipped, .screeningFileComplete {
+    display: flex;
+    justify-content: space-between;
+}
+.title{
+    font-size: 24px;
+    margin: 40px 0;
+}
+.closeModal {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.buttonContainer{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+    gap: 24px;
+    width: 100%;
+}
+.modalButton {
+    min-width: 160px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    color: var(--white);
+    background-color: var(--blue);
+    transition: background-color .5s;
+    flex: 1 1 calc(50% - 12px);
+    max-width: calc(50% - 12px);
+}
+.modalButtonWhite {
+    composes: modalButton;
+    background-color: var(--white);
+    color: var(--black);
+    border: 1px solid var(--primary-light-grey);
+}

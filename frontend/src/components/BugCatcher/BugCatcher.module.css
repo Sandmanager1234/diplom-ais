@@ -1,0 +1,57 @@
+.wrapper {
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.infoWrap {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.title {
+  align-self: center;
+  color: var(--primary-dark-blue);
+  font-size: 300px;
+  font-weight: 500;
+  letter-spacing: 18px;
+  height: max-content;
+}
+
+.description {
+  font-size: 54px;
+  font-weight: 500;
+  line-height: 70.2px;
+  color: var(--primary-dark-blue);
+  align-self: center;
+  margin-bottom: 80px;
+}
+
+.btn {
+  align-self: center;
+  width: max-content;
+  color: var(--white);
+  background-color: var(--blue);
+  border: none;
+  padding: 20px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--blue-hover);
+}
+
+.figureUp {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.figureDown {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}

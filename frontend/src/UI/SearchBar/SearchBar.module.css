@@ -1,0 +1,92 @@
+.wrap {
+    padding: 46px 68px 0 68px;
+    background: var(--white);
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.searchBar {
+    width: 91.004%;
+    padding: 16px 0;
+}
+
+.searchBar label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 5px;
+}
+
+.searchBar input {
+    width: 85%;
+    padding-right: 16px;
+    border: none;
+    outline: none;
+}
+
+.searchBar input::placeholder {
+    color: var(--secondary-dark-grey);
+}
+
+.btnFilters {
+    display: flex;
+    gap: 15px;
+}
+
+.fastFilter {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 32px;
+    padding: 0 16px;
+    color: var(--black);
+    border: none;
+    border-radius: 5px;
+    background: var(--secondary-light-grey);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.fastFilter:hover {
+    background: var(--secondary-light-grey-hover);
+    transition: .5s;
+}
+
+.fastFilter div {
+    color: var(--blue);
+}
+
+.reset {
+    display: none;
+    width: 30px;
+    height: 30px;
+    margin-right: 16px;
+    border-radius: 50%;
+    background-color: var(--secondary-light-grey);
+    border: none;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+input:valid ~ .reset {
+    display: block;
+}
+
+.reset svg path {
+    stroke: var(--secondary-dark-grey);
+}
+
+.reset:hover {
+    background-color: var(--blue);
+    transition: background-color .5s;
+}
+
+.reset:hover svg path {
+    stroke: var(--white);
+}

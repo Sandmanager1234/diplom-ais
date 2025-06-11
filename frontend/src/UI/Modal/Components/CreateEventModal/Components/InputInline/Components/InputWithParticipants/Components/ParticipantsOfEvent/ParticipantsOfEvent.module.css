@@ -1,0 +1,22 @@
+.participant {
+  width: max-content;
+  padding: 4px 10px;
+  gap: 10px;
+  border-radius: 5px;
+  color: var(--white);
+  background-color: var(--blue);
+  display: flex;
+  align-items: center;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  height: max-content;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}

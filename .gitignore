@@ -1,0 +1,8 @@
+.venv/
+examples/
+.env*
+.env.be
+.env.db
+__pycache__/
+node_modules/
+ars/ars/__pycache__/

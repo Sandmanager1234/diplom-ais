@@ -1,0 +1,23 @@
+
+.sortingBlock {
+    display: flex;
+    border-top: var(--primary-light-grey) solid 1px;
+    padding-inline: 64px;
+}
+
+.sortingBlock div {
+    padding: 17px 14px;
+    border-right: var(--primary-light-grey) solid 1px;
+
+}
+
+.sortingBlock div:last-child {
+    border-right: none;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 500;
+    color: var(--black);
+}

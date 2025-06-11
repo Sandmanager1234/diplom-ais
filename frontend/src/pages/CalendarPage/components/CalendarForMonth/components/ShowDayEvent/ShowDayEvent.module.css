@@ -1,0 +1,61 @@
+.showDayEvent {
+  width: 466px;
+  height: 1000px;
+  padding: 0px 34px 24px 34px;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  border-bottom: 1px solid var(--secondary-light-grey-hover);
+  padding: 12px 0px;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 31.2px;
+  color: var(--black);
+  margin-bottom: 25px;
+}
+
+.eventList,
+.noEventList {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow: auto;
+}
+.eventList{
+  padding-right: 10px;
+}
+
+.eventList::-webkit-scrollbar {
+  width: 4px;
+  background-color: var(--light-blue-hover);
+  border-radius: 4px;
+}
+
+.eventList::-webkit-scrollbar-thumb {
+  background-color: var(--blue);
+  border-radius: 4px;
+}
+
+.noEventList {
+  justify-content: center;
+  align-items: center;
+}
+
+.event {
+  border-left: 8px solid var(--blue);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--black);
+  padding: 16px 17px;
+  cursor: pointer;
+}
+
+.event:hover{
+  color: var(--blue);
+  background-color: var(--light-blue-hover);
+}

@@ -1,0 +1,208 @@
+.wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 1072px;
+    padding: 40px 61px 60px 61px;
+}
+
+.userInfo {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+.userInfo div:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font: 400 18px/20px Roboto;
+    background: var(--primary-dark-blue);
+    color: var(--white);
+}
+
+.name {
+    font: 500 14px/20px Roboto;
+    color: var(--black);
+}
+
+.email {
+    font: 400 12px/20px Roboto;
+    color: var(--secondary-dark-grey);
+}
+
+.line {
+    position: absolute;
+    width: 100%;
+    top: 100px;
+    left: 0;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+
+.inpName {
+    padding-bottom: 16px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--primary-light-grey);
+    font: 500 32px/38px Roboto;
+    color: var(--black);
+    outline: none;
+}
+
+.inpName:invalid[focused='true'] ~ .error {
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+.errorActive{
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+.subTitle {
+    font: 400 16px/22px Roboto;
+    color: var(--primary-dark-grey);
+    margin: 24px 0 14px 0;
+}
+
+.choiceItem {
+    display: flex;
+    gap: 11px;
+    margin-bottom: 10px;
+}
+
+.inputContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font: 400 16px/20px Roboto;
+    color: var(--black);
+}
+
+.inputCheckbox {
+    display: none;
+}
+
+.checkboxContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    width: fit-content;
+    font: 400 16px/20px Roboto;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.checkboxContainer:hover .checkboxIndicator {
+    outline: 1px solid var(--blue);
+}
+
+.checkboxIndicator {
+    height: 15px;
+    width: 15px;
+    outline: 1px solid var(--primary-light-grey);
+    border-radius: 2px;
+}
+
+.checkboxContainer input:checked + .checkboxIndicator {
+    outline: 1px solid var(--blue);
+    background-image: url("/src/assets/images/checkmark.svg");
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-color: var(--blue);
+    background-position: center;
+}
+
+
+.textAreaComment {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    margin-top: 40px;
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 6px;
+    padding: 15px 16px;
+    font: 400 14px/20px Roboto;
+    color: var(--black);
+    outline: none;
+}
+
+.textAreaComment ~ .error {
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+.wrapNotification {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: fit-content;
+    margin-top: 40px;
+    padding: 15px 30px;
+    border-radius: 6px;
+    background: var(--secondary-light-grey);
+    font: 400 16px/20px Roboto;
+    color: var(--black);
+}
+
+.error {
+    display: none;
+}
+
+.wrapNotification input:invalid[focuced='true'] ~ .error {
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+
+.wrapNotification input, .wrapNotification input::placeholder {
+    padding: 15px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    font: 400 16px/20px Roboto;
+    color: var(--black);
+}
+
+.btnSave {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 160px;
+    margin-top: 47px;
+    border: none;
+    border-radius: 5px;
+    font: 400 16px/20px Roboto;
+    color: var(--white);
+    background: var(--blue);
+    cursor: pointer;
+    transition: .25s;
+}
+
+.btnSave:hover {
+    background: var(--blue-hover);
+    transition: .25s;
+}
+
+.btnSave:disabled, .btnSave:disabled:hover {
+    background: var(--primary-light-grey);
+    cursor: default;
+}

@@ -1,0 +1,23 @@
+.events {
+  height: 24px;
+  border-left: 8px solid #2969ff;
+  background-color: #edf2ff;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 2px 8px;
+  margin-bottom: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  max-width: 140px;
+}
+
+.otherEventsLength {
+  height: 24px;
+  background-color: #edf2ff;
+  font-size: 12px;
+  line-height: 20px;
+  padding: 2px 8px;
+  text-align: center;
+}

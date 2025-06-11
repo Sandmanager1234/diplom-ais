@@ -1,0 +1,138 @@
+.wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 16px 12px 16px;
+    border-radius: 8px;
+    background: var(--white);
+}
+
+.leftSide {
+    display: flex;
+    align-items: start;
+    gap: 16px;
+}
+
+.low, .middle, .high {
+    height: 16px;
+    min-width: 16px;
+    margin-top: 3px;
+    border-radius: 50%;
+}
+
+.high {
+    background: var(--red);
+}
+
+.middle {
+    background: var(--orange);
+}
+
+.low {
+    background: var(--green);
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+}
+
+.taskName {
+    font: 500 16px/22px Roboto, sans-serif;
+    color: var(--black);
+    background: transparent;
+    width: fit-content;
+    border: none;
+    cursor: pointer;
+}
+
+.taskName:hover {
+    color: var(--blue);
+}
+
+.taskDescription {
+    font: 400 15px/18px Roboto, sans-serif;
+    color: var(--black);
+}
+
+.date {
+    display: flex;
+    gap: 16px;
+    margin-top: 6px;
+}
+
+.timeCreate {
+    font: 400 12px/17px Roboto, sans-serif;
+    color: var(--primary-dark-grey);
+}
+
+.timeResolve {
+    font: 400 12px/17px Roboto, sans-serif;
+    color: var(--blue);
+}
+
+.rightSide {
+    position: relative;
+    align-self: start;
+    display: flex;
+    gap: 16px;
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    font: 400 18px/20px Roboto, sans-serif;
+    color: var(--white);
+
+    background: var(--primary-dark-blue);
+}
+
+.bntActionMenu {
+    width: 24px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.actionMenu {
+    z-index: 1;
+    position: absolute;
+    top: 32px;
+    right: 0;
+    width: 309px;
+    padding: 16px;
+    border-radius: 6px;
+    background: var(--white);
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.08), 0 2px 24px rgba(0, 0, 0, 0.08);
+}
+
+.btnAction {
+    display: flex;
+    align-items: center;
+    padding: 5px 0;
+    font: 400 16px/22px Roboto, sans-serif;
+    color: var(--black);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    transition: .25s;
+}
+
+.btnAction svg path {
+    stroke: var(--black);
+    transition: .25s;
+}
+
+.btnAction:hover {
+    color: var(--blue);
+    transition: .25s;
+}
+
+.btnAction:hover svg path {
+    stroke: var(--blue);
+    transition: .25s;
+}

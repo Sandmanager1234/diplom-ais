@@ -1,0 +1,253 @@
+.creatingTasks {
+    min-width: 1072px;
+}
+
+.bio, .enteringName, .implementer {
+    position: relative;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+
+.bio {
+    display: flex;
+    gap: 15px;
+    padding: 40px 60px 20px 60px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.column div:first-child {
+    color: var(--black);
+    font: 14px/20px RobotoMedium, sans-serif;
+}
+
+.column div:last-child {
+    color: var(--secondary-dark-grey);
+    font: 12px/20px RobotoRegular, sans-serif;
+}
+
+
+.templatePhoto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 100%;
+    font: 400 16px/22px Roboto;
+    color: var(--white);
+    background: var(--primary-dark-blue);
+}
+
+.enteringName, .comment, .implementer {
+    margin: 0 60px 0 60px;
+}
+
+.enteringName {
+    padding: 40px 0 16px;
+}
+
+.enteringName input {
+    border: none;
+    width: 100%;
+    font: 32px/38px RobotoMedium, sans-serif;
+}
+
+.enteringName input:focus {
+    outline: none;
+}
+
+.enteringName input::placeholder {
+    color: var(--primary-light-grey);
+    font: 32px/38px RobotoMedium, sans-serif;
+}
+
+.comment {
+    padding: 24px 0 32px;
+}
+
+.comment textarea {
+    width: 100%;
+    min-height: 120px;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    font: 400 16px/20px Roboto;
+    outline: none;
+    resize: none;
+}
+
+.comment textarea::placeholder {
+    color: var(--secondary-dark-grey);
+}
+
+.implementer {
+    padding-bottom: 16px;
+    color: var(--primary-dark-grey);
+}
+
+.implementer input {
+    border: none;
+    outline: none;
+    font: 400 16px/22px Roboto;
+    color: var(--primary-dark-grey);
+    width: 100%;
+    cursor: pointer;
+}
+
+.dropValues {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 482px;
+    max-height: 400px;
+    overflow: auto;
+    border-radius: 8px;
+    background: var(--white);
+    padding: 14px 12px;
+    filter: drop-shadow(0px 4px 25px rgba(0, 0, 0, 0.08));
+}
+
+.dropValues button {
+    display: flex;
+    flex-direction: column;
+    font: 500 16px/22px Roboto;
+    color: var(--black);
+    padding: 6px;
+    text-align: left;
+    background: transparent;
+    border-radius: 4px;
+    transition: .25s;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.dropValues button span {
+    font: 400 14px/20px Roboto;
+    color: var(--secondary-dark-grey);
+}
+
+
+.dropValues button:hover, .dropValues button:focus {
+    background: var(--secondary-light-grey);
+    transition: .25s;
+}
+
+.dateRange {
+    padding: 40px 60px 25px 60px;
+}
+
+.low, .middle, .high {
+    height: 16px;
+    width: 16px;
+    margin-top: 3px;
+    border-radius: 50%;
+}
+
+.high {
+    background: var(--red);
+}
+
+.middle {
+    background: var(--orange);
+}
+
+.low {
+    background: var(--green);
+}
+
+.priority {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 60px;
+    font: 400 14px/18px Roboto;
+    color: var(--primary-dark-grey);
+}
+
+.choicePriority {
+    position: relative;
+    width: 291px;
+    margin-top: 5px;
+    padding: 16px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+}
+
+.prioritySelection, .choicePriority {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 50px;
+    color: var(--black);
+    font: 16px/20px RobotoMedium, sans-serif;
+    background: none;
+    cursor: pointer;
+}
+
+.prioritySelection {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+
+.prioritySelection:hover {
+    color: var(--blue);
+}
+
+.error{
+    width: 100%;
+    display: block;
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+.listPriority {
+    position: absolute;
+    top: 80px;
+    width: 291px;
+    padding: 0 16px;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    background: var(--white);
+    max-height: 490px;
+    overflow: auto;
+}
+
+.btnSave {
+    width: 160px;
+    height: 50px;
+    margin-top: 74px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    font: 400 16px/20px Roboto;
+    border: none;
+    color: var(--white);
+    background: var(--blue);
+    cursor: pointer;
+}
+
+.arrowUp, .arrowDown {
+    position: absolute;
+    right: 0;
+    width: 14px;
+    margin-right: 16px;
+}
+
+.arrowUp {
+    rotate: -90deg;
+    transition: .3s;
+}
+
+.arrowDown {
+    rotate: 90deg;
+    transition: .3s;
+}
+
+.hidden {
+    display: none;
+}

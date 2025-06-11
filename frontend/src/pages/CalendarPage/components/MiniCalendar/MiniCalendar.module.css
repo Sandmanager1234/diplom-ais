@@ -1,0 +1,33 @@
+.dateCalendar {
+  margin: 0;
+}
+.MuiPickersDay-root{
+  color:blue
+}
+
+.currentDateRange {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #231f20;
+  margin-right: 10px;
+}
+
+.btn,
+.btnActive {
+  background-color: transparent;
+  width: max-content;
+  height: max-content;
+  border: none;
+  cursor: pointer;
+}
+
+.btn svg{
+  transform: rotate(0deg);
+  transition: transform ease 0.5s;
+}
+
+.btnActive svg {
+  transform: rotate(180deg);
+  transition: transform ease 0.5s;
+}

@@ -1,0 +1,17 @@
+.startTimeError,
+.endTimeError,
+.timeRangeError {
+  position: absolute;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--red-error);
+}
+
+.endTimeError {
+  right: 0;
+}
+
+.timeRangeError {
+  left: 150px;
+}

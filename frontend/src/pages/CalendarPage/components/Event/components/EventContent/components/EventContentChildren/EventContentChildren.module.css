@@ -1,0 +1,7 @@
+.childrenWrap {
+  display: flex;
+  gap: 16px;
+  border-bottom: 1px solid var(--primary-light-grey);
+  padding-bottom: 16px;
+  position: relative;
+}

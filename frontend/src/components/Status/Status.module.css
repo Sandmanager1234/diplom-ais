@@ -1,0 +1,83 @@
+.statusField {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.statusProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 14px/16px 'RobotoMedium', sans-serif;
+  cursor: pointer;
+}
+
+.statusProfileActive {
+  color: #2969ff;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 500 14px/16px 'RobotoMedium', sans-serif;
+  cursor: pointer;
+}
+
+.statusProfileActive > button > svg > path {
+  fill: #2969ff;
+}
+
+.statusWrap {
+  position: relative;
+}
+
+.moreStatus {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.moreStatus:hover svg path {
+  stroke: #2969ff;
+}
+
+.arrowBtn {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transform: translateY(-7%);
+}
+
+.selectStatus {
+  z-index: 1;
+  position: absolute;
+  top: 36px;
+  left: 0;
+  width: 250px;
+  padding: 24px 0;
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1), 0 2px 24px rgba(0, 0, 0, 0.1);
+  cursor: default;
+}
+
+.hidden {
+  display: none;
+}
+
+.statusDropDown {
+  color: #231f20;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font: 400 16px/20px 'RobotoRegular', sans-serif;
+  padding: 6px 24px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.statusDropDown:hover {
+  cursor: pointer;
+  background-color: #eff0f5;
+}

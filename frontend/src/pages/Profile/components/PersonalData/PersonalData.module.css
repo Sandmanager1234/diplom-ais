@@ -1,0 +1,50 @@
+.wrap {
+    position: relative;
+    padding: 29px 35px 0 68px;
+    border-right: 1px solid var(--secondary-light-grey-hover);
+    font: 400 16px/22px RobotoRegular;
+    width: 450px;
+}
+
+.avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: var(--white);
+    font: 16px/22px RobotoRegular, sans-serif;
+    background: var(--primary-dark-blue);
+}
+
+.name {
+    margin-top: 7px;
+    font: 500 24px/31px RobotoMedium;
+}
+
+.position {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--secondary-light-grey-hover);
+}
+
+.position svg path {
+    stroke: var(--black);
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 25px 0;
+    border-bottom: 1px solid var(--secondary-light-grey-hover);
+}
+
+.contacts  div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}

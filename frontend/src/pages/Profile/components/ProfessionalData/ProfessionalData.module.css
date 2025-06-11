@@ -1,0 +1,164 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navigation {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 81px;
+    padding: 50px 40px 0 67px;
+}
+
+.links {
+    display: flex;
+    gap: 40px;
+}
+
+.defaultLink, .activeLink {
+    margin-top: 4px;
+    color: var(--primary-dark-grey);
+    font: 16px/22px RobotoRegular, sans-serif;
+    border: none;
+    background: none;
+    text-decoration: none;
+}
+
+.activeLink {
+    color: var(--black);
+    font: 16px/22px RobotoMedium, sans-serif;
+}
+
+.defaultLink:after, .activeLink:after {
+    display: block;
+    height: 2px;
+    width: 0;
+    background-color: var(--blue);
+    content: "";
+    transition: width .3s ease-in-out;
+}
+
+.defaultLink:hover:after,
+.defaultLink:focus:after,
+.activeLink:after {
+    width: 100%;
+}
+
+.notifications {
+    position: relative;
+    margin: auto 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.notifications:hover svg path {
+    fill: var(--blue);
+}
+
+.notifications:hover {
+    animation: notifications .2s infinite;
+}
+
+@-webkit-keyframes notifications {
+    from {
+        transform: rotate(6deg);
+        margin-left: 1px;
+    }
+    to {
+        transform: rotate(-6deg);
+        margin-left: -1px;
+    }
+}
+
+.page {
+    height: 100%;
+    background: var(--secondary-light-grey);
+}
+
+.notificationWrap {
+    z-index: 10;
+    position: absolute;
+    right: 80px;
+    top: 41px;
+    width: 359px;
+    padding-bottom: 16px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+    background: var(--white);
+}
+
+.title {
+    border-radius: 8px;
+    padding: 20px 24px;
+    font: 700 18px/20px Roboto;
+    color: var(--white);
+    background: var(--blue);
+    cursor: default;
+}
+
+.subTitle {
+    font: 500 20px/23px Roboto;
+    color: var(--black);
+    padding: 20px 24px 0 24px;
+}
+
+.infoBlock {
+    display: flex;
+    gap: 16px;
+    padding: 20px 0;
+    font: 400 16px/22px Roboto;
+    color: var(--black);
+    margin: 0 24px;
+    border-bottom: 1px solid var(--primary-light-grey);
+}
+
+.controlBlock {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 24px 0 24px;
+}
+
+.controlBlock > div {
+    display: flex;
+    gap: 16px;
+}
+
+.btnRead {
+    padding: 9px 16px;
+    font: 400 14px/22px Roboto;
+    color: var(--white);
+    background: var(--blue);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnArrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 5px;
+    background: var(--secondary-light-grey-hover);
+    cursor: pointer;
+}
+
+.btnArrow:first-child {
+    transform: rotate(180deg);
+}
+
+.btnArrow svg path {
+    stroke: var(--black);
+    transition: .25s;
+}
+
+.btnArrow:hover svg path {
+    stroke: var(--blue);
+    transition: .25s;
+}

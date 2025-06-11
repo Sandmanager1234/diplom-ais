@@ -1,0 +1,37 @@
+.employmentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 20px 0;
+  border-bottom: 1px solid #dee3ef;
+}
+
+.employmentData {
+  font: 400 16px/20px 'RobotoRegular', sans-serif;
+  padding-top: 8px;
+  margin: 0;
+}
+
+.fieldInfo {
+  padding: 16px 0;
+}
+
+.titleInfo {
+  color: var(--primary-dark-grey);
+  font: 400 14px/19px 'RobotoRegular', sans-serif;
+  margin-bottom: 8px;
+}
+
+.tripContainer {
+  display: flex;
+  gap: 70px;
+  border-top: 1px solid #dee3ef;
+  padding-top: 20px;
+}
+
+.relocationData {
+  font: 400 16px/20px 'RobotoRegular', sans-serif;
+  padding-top: 8px;
+  margin: 0;
+  width: 250px;
+}

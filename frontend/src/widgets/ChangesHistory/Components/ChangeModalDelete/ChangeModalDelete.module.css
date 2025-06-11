@@ -1,0 +1,73 @@
+.modal{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    width: 558px;
+    padding: 40px 32px;
+    background: #fff;
+    border-radius: 8px;
+}
+
+.title {
+    font: 500 24px/28px Roboto;
+    color: var(--black);
+    margin-bottom: 8px;
+}
+
+.subTitle {
+    font: 400 16px/22px Roboto;
+    color: var(--black);
+}
+
+.btnWrap {
+    display: flex;
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.btnCancel, .btnSave {
+    font: 400 16px/22px Roboto;
+    height: 50px;
+    width: 160px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btnCancel {
+    color: var(--black);
+    border: 1px solid var(--primary-light-grey);
+    background: var(--white);
+}
+
+.btnCancel:hover {
+    border: 1px solid var(--secondary-light-grey);
+    background: var(--secondary-light-grey);
+    color: var(--blue);
+}
+
+.btnSave {
+    border: none;
+    background: var(--blue);
+    color: var(--white);
+}
+
+.btnSave:hover:enabled {
+    background: var(--blue-hover);
+}
+
+.btnSave:disabled {
+    background: var(--primary-light-grey);
+    color: var(--black);
+}

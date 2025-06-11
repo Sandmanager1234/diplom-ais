@@ -1,0 +1,18 @@
+.vacancyName {
+    border-bottom: 1px solid #F5F5F5;
+    font-weight: 500;
+}
+.vacancyName * {
+    text-decoration: none;
+}
+.vacancyInfo {
+    color: #656263;
+    display: flex;
+    gap: 10px;
+}
+.workInfo {
+    color: #656263;
+    font-weight: 500;
+    display: flex;
+    gap: 10px;
+}

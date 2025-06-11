@@ -1,0 +1,12 @@
+.chartClosedVacancies {
+    max-width: 90%;
+    max-height: 721px;
+}
+
+.chartTitle{
+    color: var(--primary-dark-grey);
+    font-size: 16px;
+    padding-top: 30px;
+    padding-left: 30px;
+    padding-bottom: 50px;
+}

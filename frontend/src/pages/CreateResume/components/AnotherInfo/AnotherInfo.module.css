@@ -1,0 +1,134 @@
+.wrap {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    margin-bottom: 24px;
+    font: 500 24px/28px RobotoMedium;
+    color: var(--black);
+}
+
+.wrapChoice {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font: 400 16px/19px RobotoRegular;
+    color: var(--black)
+}
+
+.subTitle {
+    font: 500 20px/23px RobotoMedium;
+    color: var(--black);
+}
+
+.choiceItem {
+    display: flex;
+    gap: 11px;
+}
+
+.inputContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+.inputRadio {
+    display: none;
+}
+
+.radioIndicator {
+    display: block;
+    height: 15px;
+    width: 15px;
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.inputContainer:hover .radioIndicator {
+    border: 1px solid var(--blue);
+}
+
+.inputContainer input:checked + .radioIndicator {
+    border: 3px solid var(--blue);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.inputRadio {
+    z-index: -1;
+    opacity: 0;
+    position: absolute;
+    height: 15px;
+    width: 15px;
+}
+
+.inputCheckbox {
+    display: none;
+}
+
+.checkboxContainer {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.checkboxContainer:hover .checkboxIndicator {
+    outline: 1px solid var(--blue);
+}
+
+.checkboxIndicator {
+    height: 15px;
+    width: 15px;
+    outline: 1px solid var(--primary-light-grey);
+    border-radius: 2px;
+}
+
+.checkboxContainer input:checked + .checkboxIndicator {
+    outline: 1px solid var(--blue);
+    background-image: url("/src/assets/images/checkmark.svg");
+    background-repeat: no-repeat;
+    background-size: 60% auto;
+    background-color: var(--blue);
+    background-position: center;
+}
+
+.wrapBtn{
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    width: 640px;
+}
+
+.btnContinue {
+    height: 50px;
+    width: 160px;
+    margin-top: 30px;
+    font: 400 16px/20px RobotoRegular;
+    border-radius: 6px;
+    border: 1px solid var(--primary-light-grey);
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnContinue:hover {
+    border: 1px solid var(--blue);
+}
+
+
+.btnBack{
+    height: fit-content;
+    width: fit-content;
+    margin: auto 40px auto 40px;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--blue);
+    border-radius: 6px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}

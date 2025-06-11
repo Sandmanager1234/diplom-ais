@@ -1,0 +1,41 @@
+.new, .checkSecurity, .communication, .interview, .sendOffer, .reject, .exit, .customerInterview, .screening {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+}
+
+.screening{
+    background: #2969FF;
+}
+
+.new {
+    background: #9D70FF;
+}
+
+.checkSecurity {
+    background: #FF5E7B;
+}
+
+.communication {
+    background: #FF9029;
+}
+
+.interview {
+    background: #48C95F;
+}
+
+.customerInterview {
+    background: #6D29FF;
+}
+
+.sendOffer {
+    background: #00BDC9;
+}
+
+.reject {
+    background: #FF0000;
+}
+
+.exit {
+    background: #1A7C47;
+}

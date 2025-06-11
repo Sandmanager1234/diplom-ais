@@ -1,0 +1,34 @@
+.vacanciesList {
+  padding: 24px 68px 40px 68px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.loader {
+  height: 50px;
+}
+
+.loader div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.btnContentUp {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  right: 18px;
+  bottom: 64px;
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.btnContentUp:hover svg path {
+  fill: var(--blue);
+}

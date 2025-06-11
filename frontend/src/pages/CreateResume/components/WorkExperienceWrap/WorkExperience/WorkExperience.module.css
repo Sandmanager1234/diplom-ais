@@ -1,0 +1,145 @@
+.wrap {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.wrapWorkExperience {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+    width: 640px;
+}
+
+.subTitle {
+    width: 100%;
+    margin-top: 8px;
+    font: 400 16px/18px RobotoRegular;
+    color: var(--black);
+}
+
+.wrapCheckbox {
+    display: flex;
+    gap: 11px;
+    width: 100%;
+    font: 400 16px/19px RobotoRegular;
+    color: var(--black);
+    cursor: default;
+}
+
+.wrapCheckbox input {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: flex;
+    gap: 11px;
+    cursor: pointer;
+}
+
+.wrapExperience {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 8px;
+    cursor: default;
+}
+
+.title {
+    font: 400 14px/18px RobotoRegular;
+    color: var(--primary-dark-grey);
+}
+
+.experience {
+    margin-top: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--primary-light-grey);
+    font: 400 16px/20px RobotoRegular;
+    color: var(--secondary-dark-grey);
+}
+
+.wrapDescription {
+    width: 100%;
+}
+
+.description, .errorDescription {
+    resize: none;
+    width: 100%;
+    height: 120px;
+    padding: 15px 16px;
+    border: 1px solid var(--primary-light-grey);
+    border-radius: 6px;
+    font: 400 16px/20px RobotoRegular;
+    color: var(--black);
+    outline: none
+}
+
+.description:focus, .errorDescription {
+    border: 1px solid var(--blue);
+}
+
+.description::placeholder, .errorDescription {
+    color: var(--secondary-dark-grey);
+}
+
+.errorDescription {
+    border: 1px solid var(--red-error);
+}
+
+.error {
+    font: 400 14px/20px Roboto;
+    color: var(--red-error);
+}
+
+.cardWrap {
+    display: flex;
+    flex-direction: column;
+    width: 640px;
+    padding: 25px 20px 40px 20px;
+    background: var(--secondary-light-grey);
+    border-radius: 6px;
+}
+
+.navCard {
+    display: flex;
+    justify-content: space-between;
+    font: 400 16px/22px Roboto;
+    color: var(--black);
+}
+
+.btnNav {
+    border: none;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btnNav svg g path {
+    stroke: var(--primary-dark-grey);
+}
+
+.btnNav:hover svg g path {
+    stroke: var(--blue);
+}
+
+.btnNav:hover svg path {
+    stroke: var(--blue);
+}
+
+.position {
+    margin: 16px 0;
+    font: 500 16px/20px Roboto;
+    color: var(--black);
+}
+
+.descriptionExperience {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font: 400 16px/21px Roboto;
+    color: var(--black);
+}

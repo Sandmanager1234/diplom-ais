@@ -1,0 +1,30 @@
+.vacancyInfo {
+  max-width: 451px;
+  padding: 40px 40px 40px 64px;
+  flex: 1 1 auto;
+  background-color: var(--secondary-light-grey);
+  border-right: 1px solid var(--secondary-light-grey-hover);
+}
+.alertModalWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 558px;
+  padding: 40px 32px;
+  background: #fff;
+  border-radius: 8px;
+}
+.closeModal {
+  height: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.screeningFileAlert, .screeningFileSkipped, .screeningFileComplete {
+  display: flex;
+  justify-content: space-between;
+}
+.screeningAlertButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 40px;
+}

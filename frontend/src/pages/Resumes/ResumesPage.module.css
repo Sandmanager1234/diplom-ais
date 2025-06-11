@@ -1,0 +1,5 @@
+.wrap {
+    flex: 1;
+    font-family: RobotoRegular, sans-serif;
+    background: var(--secondary-light-grey);
+}
