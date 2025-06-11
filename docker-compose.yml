@@ -20,17 +20,17 @@ services:
     ports:
       - "5432:5432"
 
-  frontend:
-    build:
-      context: ./frontend
-      dockerfile: Dockerfile
-    container_name: dev-frontend
-    stdin_open: true
-    tty: true
-    ports:
-      - "3000:80"
-    depends_on:
-      - backend
+  # frontend:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #   container_name: dev-frontend
+  #   stdin_open: true
+  #   tty: true
+  #   ports:
+  #     - "3000:80"
+  #   depends_on:
+  #     - backend
 
 
 
