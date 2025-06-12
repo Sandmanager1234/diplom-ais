@@ -1,10 +1,7 @@
 from rest_framework import serializers
 
 from .models import Vacancy
-from dictionary.models import (
-    Grade, Currency, Experience, EmploymentType,
-    ScheduleType, JobTitle, FormatOfWork, Branch
-)
+
 
 class VacancySerializer(serializers.ModelSerializer):
     grade = serializers.StringRelatedField(
