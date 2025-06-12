@@ -1,108 +1,76 @@
 from rest_framework import serializers
 from .models import (
-    Resume, 
-    ResumeContact, 
-    ResumeEducation,
-    ResumeExperience,
-    ResumeEmploymentType,
-    ResumeLanguage,
-    ResumeScheduleType
+    Resume, ResumeEducation, ResumeExperience, ResumeLanguage, ResumeContact,
+    ResumeScheduleType, ResumeEmploymentType
 )
-
-
-from rest_framework import serializers
-from resumes.models import (
-    Resume, ResumeEducation, ResumeExperience, ResumeLanguage,
-    ResumeContact, ResumeScheduleType, ResumeEmploymentType
-)
-from dictionary.models import (
-    Country, City, Region, Language, LanguageLevel, EmploymentType, ScheduleType, Currency
-)
-from dictionary.serializers import (
-    CountrySerializer, CitySerializer, RegionSerializer,
-    LanguageSerializer, LanguageLevelSerializer,
-    EmploymentTypeSerializer, ScheduleTypeSerializer, CurrencySerializer
-)
-
 
 class ResumeEducationSerializer(serializers.ModelSerializer):
     class Meta:
         model = ResumeEducation
-        exclude = ['resume']
+        fields = ['id', 'institution_name', 'education_type', 'end_year']
 
 
 class ResumeExperienceSerializer(serializers.ModelSerializer):
     class Meta:
         model = ResumeExperience
-        exclude = ['resume']
+        fields = ['id', 'company_name', 'title', 'start_date', 'end_date', 'is_current', 'description']
 
 
 class ResumeLanguageSerializer(serializers.ModelSerializer):
-    language = LanguageSerializer()
-    level = LanguageLevelSerializer()
+    language = serializers.StringRelatedField()  
+    level = serializers.StringRelatedField()   
 
     class Meta:
         model = ResumeLanguage
-        exclude = ['resume']
+        fields = ['id', 'language', 'level']
 
 
 class ResumeContactSerializer(serializers.ModelSerializer):
     class Meta:
         model = ResumeContact
-        exclude = ['resume']
+        fields = ['id', 'contact_type', 'contact_value', 'is_primary']
 
 
 class ResumeScheduleTypeSerializer(serializers.ModelSerializer):
-    name = ScheduleTypeSerializer()
-
     class Meta:
         model = ResumeScheduleType
-        exclude = ['resume']
+        fields = ['id', 'name']
 
 
 class ResumeEmploymentTypeSerializer(serializers.ModelSerializer):
-    name = EmploymentTypeSerializer()
-
     class Meta:
         model = ResumeEmploymentType
-        exclude = ['resume']
+        fields = ['id', 'name']
 
 
 class ResumeSerializer(serializers.ModelSerializer):
-    country = serializers.SlugRelatedField(
-        slug_field='name',
-        queryset=Country.objects.all(),
-        required=False
-    )
-    city = serializers.SlugRelatedField(
-        slug_field='name',
-        queryset=City.objects.all(),
-        required=False
-    )
-    region = serializers.SlugRelatedField(
-        slug_field='name',
-        queryset=Region.objects.all(),
-        required=False
-    )
-    currency = serializers.SlugRelatedField(
-        slug_field='name',
-        queryset=Currency.objects.all(),
-        required=False
-    )
-    educations = ResumeEducationSerializer(many=True, required=False)
-    experiences = ResumeExperienceSerializer(many=True, required=False)
-    languages = ResumeLanguageSerializer(many=True, required=False)
-    contacts = ResumeContactSerializer(many=True, required=False)
-    schedule_types = ResumeScheduleTypeSerializer(many=True, required=False)
-    employment_types = ResumeEmploymentTypeSerializer(many=True, required=False)
+    country = serializers.StringRelatedField()
+    city = serializers.StringRelatedField()
+    region = serializers.StringRelatedField()
+    currency = serializers.StringRelatedField()
+    created_by = serializers.StringRelatedField()
+
+    educations = ResumeEducationSerializer(many=True)
+    experiences = ResumeExperienceSerializer(many=True)
+    languages = ResumeLanguageSerializer(many=True)
+    contacts = ResumeContactSerializer(many=True)
+
+    schedule_types = serializers.SerializerMethodField()
+    employment_types = serializers.SerializerMethodField()
 
     class Meta:
         model = Resume
-        fields = ('__all__')
-        read_only_fields = ['created_at', 'updated_at']
+        fields = [
+            'id', 'title', 'description', 'first_name', 'last_name', 'middle_name',
+            'birth_date', 'gender', 'country', 'city', 'region', 'salary', 'currency',
+            'ready_to_relocate', 'ready_to_buisiness_trip', 'version', 'created_by',
+            'is_active', 'created_at', 'updated_at', 'deleted_at', 'is_deleted',
+            'educations', 'experiences', 'languages', 'contacts',
+            'schedule_types', 'employment_types'
+        ]
 
+    def get_schedule_types(self, obj):
+        return [str(s.name) for s in obj.schedule_types.all()]
 
-class ResumeSmallSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = Resume
-        fields = ('id', 'last_name', 'first_name', 'middle_name')
+    def get_employment_types(self, obj):
+        return [str(e.name) for e in obj.employment_types.all()]

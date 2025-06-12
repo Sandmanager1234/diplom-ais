@@ -44,6 +44,7 @@ class Resume(models.Model):
     created_by = models.ForeignKey(
         Recruiter, on_delete=models.DO_NOTHING, related_name='created_resumes'
     )
+    is_active = models.BooleanField(default=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     deleted_at = models.DateTimeField(blank=True, null=True)
@@ -65,16 +66,6 @@ class ResumeEducation(models.Model):
         ('курсы', 'Курсы повышения квалификации')
     ])
     end_year = models.IntegerField()
-
-
-
-
-
-
-
-
-
-
 
 class ResumeExperience(models.Model):
     resume = models.ForeignKey(

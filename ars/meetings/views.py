@@ -16,7 +16,10 @@ class MeetingViewSet(ModelViewSet):
         elif self.action in ['create', 'update', 'partial_update', 'retrieve']:
             return MeetingDetailSerializer
         return super().get_serializer_class()
-    
+
+
+
+
 
 
 
