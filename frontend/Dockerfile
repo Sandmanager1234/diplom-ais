@@ -1,9 +1,19 @@
-FROM node:14.16.1-alpine as build
+# Стадия сборки фронтенда
+FROM node:14.16.1-alpine AS build
 ARG BRANCH_ARG
 ENV BRANCH_ENV=$BRANCH_ARG
 
 WORKDIR /frontend
 
+# Копируем сначала package.json и package-lock.json (или yarn.lock)
+# Это позволяет Docker кэшировать слой с установленными зависимостями,
+# если эти файлы не менялись.
+COPY package*.json ./
+
+# Устанавливаем зависимости
+RUN npm install
+
+# Копируем остальные файлы проекта
 COPY . .
 
 RUN npm install
@@ -21,4 +31,3 @@ COPY ./default.conf /etc/nginx/conf.d/
 EXPOSE 80/tcp
 
 CMD ["nginx", "-g", "daemon off;"]
-
