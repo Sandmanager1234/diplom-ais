@@ -12,9 +12,10 @@ RUN test "$BRANCH_ENV" = "master" && npm run build:prod || npm run build:dev
 
 FROM nginx:1.24.0-alpine3.17-slim
 
-COPY --from=build /frontend/dist/ /usr/share/nginx/html
+COPY --from=build /app/build/ /usr/share/nginx/html
 
-COPY ./default.conf /etc/nginx/conf.d/default.conf
+
+COPY ./default.conf /etc/nginx/conf.d/
 
 
 EXPOSE 80/tcp

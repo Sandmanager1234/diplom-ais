@@ -1,7 +1,6 @@
 from rest_framework import serializers
 
 from .models import Vacancy
-from relations.serializers import ResumeVacancyVSerializer
 from dictionary.models import (
     Grade, Currency, Experience, EmploymentType,
     ScheduleType, JobTitle, FormatOfWork, Branch
@@ -59,7 +58,7 @@ class VacancyListSerializer(VacancySerializer):
 
 
 class VacancyDetailSerializer(VacancySerializer):
-    resumes = ResumeVacancyVSerializer(many=True, read_only=True)
+    # resumes = ResumeVacancyVSerializer(many=True, read_only=True)
     class Meta:
         model = Vacancy
         fields = ('id', 'title', 'description', 'min_salary',
@@ -67,8 +66,7 @@ class VacancyDetailSerializer(VacancySerializer):
                   'employment_type', 'schedule_type', 'created_by',
                   'job_title', 'format_of_work', 'branch',
                   'is_need_higher_education', 'is_open', 'is_deleted',
-                  'deleted_at', 'created_at', 'updated_at', 
-                  'resumes'
+                  'deleted_at', 'created_at', 'updated_at'
                   )
         read_only_fields = (
             'created_by', 'created_at', 'updated_at', 'is_deleted', 'deleted_at', 'resumes'
